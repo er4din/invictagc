@@ -1,0 +1,36 @@
+# WordPress core
+/wp-admin/
+/wp-includes/
+/wp-*.php
+/index.php
+/xmlrpc.php
+/license.txt
+/readme.html
+
+# WordPress config (contains DB credentials)
+wp-config.php
+wp-config-sample.php
+
+# Uploads (media files — large and environment-specific)
+/wp-content/uploads/
+
+# Cache and generated files
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+
+# Logs
+*.log
+/wp-content/debug.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
