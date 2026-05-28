@@ -1,0 +1,590 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2019-05-20 05:37+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/class-profilegrid-mycred-admin.php:105
+msgid "Mycred Settings"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:114
+#, php-format
+msgid ""
+"MyCRED is not installed. This extension requires installation of MyCRED "
+"extension from WordPress repository and at least one point type defined. <a "
+"href='%s' target='_blank'>Click here</a> to start installing MyCRED."
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:128
+msgid ""
+"No Point Type is configured with MyCRED. Please define a Point Type to "
+"integrate with user profiles."
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:164
+#, php-format
+msgid ""
+"Profilegrid Mycred work with ProfileGrid Plugin. You can install it  from <a "
+"href='%s'>Here</a>."
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:177
+msgid ""
+"Since you have deactivated myCred, the ProfileGrid myCred Extension has been "
+"automatically deactivated. You will have to manually turn it on when you "
+"activate myCred."
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:213
+#: admin/partials/profilegrid-mycred-admin-display.php:163
+msgid "User Uploads Profile Image"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:217
+#: admin/partials/profilegrid-mycred-admin-display.php:198
+msgid "User Uploads Cover Image"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:221
+#: admin/partials/profilegrid-mycred-admin-display.php:233
+msgid "User Updates Profile"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:225
+#: admin/partials/profilegrid-mycred-admin-display.php:268
+msgid "User is Approved by Group or Site Admin for Closed Group"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:229
+#: admin/partials/profilegrid-mycred-admin-display.php:304
+msgid "User Blog Post is Published"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:233
+#: admin/partials/profilegrid-mycred-admin-display.php:339
+msgid "User is Promoted to Group Manager"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:237
+#: admin/partials/profilegrid-mycred-admin-display.php:374
+msgid "User Friend Request is Approved"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:241
+#: admin/partials/profilegrid-mycred-admin-display.php:409
+msgid "User Uploads Group Photo"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:245
+#: admin/partials/profilegrid-mycred-admin-display.php:444
+msgid "User Post on Group Wall"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:249
+msgid "User Access Restricted Content"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:253
+#: admin/partials/profilegrid-mycred-admin-display.php:515
+msgid "User Leaves a Group"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:257
+#: admin/partials/profilegrid-mycred-admin-display.php:550
+msgid "User Removes Profile Image"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:261
+#: admin/partials/profilegrid-mycred-admin-display.php:585
+msgid "User Removes Cover Image"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:265
+#: admin/partials/profilegrid-mycred-admin-display.php:620
+msgid "User Friend Request is Rejected"
+msgstr ""
+
+#: admin/class-profilegrid-mycred-admin.php:269
+#: admin/partials/profilegrid-mycred-admin-display.php:655
+msgid "User is Suspended"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:111
+msgid ""
+"Award points to the user on uploading a new or changing an existing Profile "
+"Image"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:124
+#: admin/partials/profilegrid-mycred-admin-display.php:204
+msgid ""
+"Award points to the user on uploading a new or changing an existing Cover "
+"Image"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:137
+#: admin/partials/profilegrid-mycred-admin-display.php:556
+msgid ""
+"Award or deduct points from the user on removing his/ her profile image."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:150
+#: admin/partials/profilegrid-mycred-admin-display.php:591
+msgid "Award or deduct points from the user on removing his/ her cover image."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:163
+#: admin/partials/profilegrid-mycred-admin-display.php:239
+msgid ""
+"Award points to the user on filling an empty profile field or updating an "
+"existing value."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:178
+#: admin/partials/profilegrid-mycred-admin-display.php:274
+msgid ""
+"Award points to the user when his group joining request is approved by site "
+"admin or Group Manager."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:193
+#: admin/partials/profilegrid-mycred-admin-display.php:310
+msgid ""
+"Award points to the user on successfully publishing a blog post using the "
+"post submission form. Applies if the post is automatically published or "
+"approved by the Group Manager."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:206
+msgid "Award points to the user when he or she is promoted to Group Manager."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:220
+#: admin/partials/profilegrid-mycred-admin-display.php:380
+msgid ""
+"Award points to the user when his/ her friend request is approved by another "
+"user."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:234
+#: admin/partials/profilegrid-mycred-admin-display.php:415
+#: admin/partials/profilegrid-mycred-admin-display.php:450
+msgid "Award points to the user on uploading a new Group Photo"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:249
+msgid "Award points to the user on posting on the Group Wall"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:262
+msgid ""
+"Award or deduct points from the user on leaving a Group he or she is a "
+"member of"
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:276
+#: admin/partials/profilegrid-mycred-admin-display.php:626
+msgid ""
+"Award or deduct points from the user when his/ her friend request is "
+"rejected."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:289
+#: admin/partials/profilegrid-mycred-admin-display.php:661
+msgid ""
+"Award or deduct points from the user when he/ she is suspended by site admin "
+"or Group Manager."
+msgstr ""
+
+#: public/class-profilegrid-mycred-public.php:403
+msgid "Balance"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:49
+msgid "myCRED INTEGRATION"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:60
+msgid "myCRED Integration"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:66
+msgid ""
+"Turn on to start myCRED Integration. Once on, a new ProfileGrid menu item\n"
+"named ‘myCRED’ will appear. Clicking on it will allow you to set point "
+"reward rules for your users."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:76
+msgid "Select Point Type"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:97
+msgid "Select the myCRED Point Type you want to use with ProfileGrid."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:103
+msgid "Display Rank on the User Profile"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:109
+msgid ""
+"Display user rank based on the Point Type selected above on User Profiles "
+"publicly. Only ranks associated with Point Type defined above will be "
+"displayed."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:114
+msgid "Display Points History in User Profile Settings"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:120
+msgid ""
+"Display Point history in private area of User Profiles. A new settings tab "
+"will appear displaying current points and history."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:125
+msgid "Display Badges"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:131
+msgid "Display a new tab in User Profiles with badges earned by the user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:138
+msgid "Title of the Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:141
+msgid "Badges"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:143
+msgid "Set name of the profile tab which will display badges."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:147
+msgid "Display All Available Badges"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:153
+msgid ""
+"Display all available badges including those not earned by the user. Earned "
+"badges will be highlighted."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:159
+msgid "Rules"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:169
+msgid ""
+"Award points to the user on uploading a new or changing an existing Profile "
+"Image."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:175
+#: admin/partials/profilegrid-mycred-admin-display.php:210
+#: admin/partials/profilegrid-mycred-admin-display.php:245
+#: admin/partials/profilegrid-mycred-admin-display.php:280
+#: admin/partials/profilegrid-mycred-admin-display.php:316
+#: admin/partials/profilegrid-mycred-admin-display.php:351
+#: admin/partials/profilegrid-mycred-admin-display.php:386
+#: admin/partials/profilegrid-mycred-admin-display.php:421
+#: admin/partials/profilegrid-mycred-admin-display.php:456
+#: admin/partials/profilegrid-mycred-admin-display.php:527
+#: admin/partials/profilegrid-mycred-admin-display.php:562
+#: admin/partials/profilegrid-mycred-admin-display.php:597
+#: admin/partials/profilegrid-mycred-admin-display.php:632
+#: admin/partials/profilegrid-mycred-admin-display.php:667
+msgid "Points"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:180
+#: admin/partials/profilegrid-mycred-admin-display.php:215
+#: admin/partials/profilegrid-mycred-admin-display.php:250
+#: admin/partials/profilegrid-mycred-admin-display.php:285
+#: admin/partials/profilegrid-mycred-admin-display.php:321
+#: admin/partials/profilegrid-mycred-admin-display.php:356
+#: admin/partials/profilegrid-mycred-admin-display.php:391
+#: admin/partials/profilegrid-mycred-admin-display.php:426
+#: admin/partials/profilegrid-mycred-admin-display.php:461
+msgid "Points to be awarded to the user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:184
+#: admin/partials/profilegrid-mycred-admin-display.php:219
+#: admin/partials/profilegrid-mycred-admin-display.php:254
+#: admin/partials/profilegrid-mycred-admin-display.php:289
+#: admin/partials/profilegrid-mycred-admin-display.php:325
+#: admin/partials/profilegrid-mycred-admin-display.php:360
+#: admin/partials/profilegrid-mycred-admin-display.php:395
+#: admin/partials/profilegrid-mycred-admin-display.php:430
+#: admin/partials/profilegrid-mycred-admin-display.php:465
+#: admin/partials/profilegrid-mycred-admin-display.php:536
+#: admin/partials/profilegrid-mycred-admin-display.php:571
+#: admin/partials/profilegrid-mycred-admin-display.php:606
+#: admin/partials/profilegrid-mycred-admin-display.php:641
+#: admin/partials/profilegrid-mycred-admin-display.php:676
+msgid "Limit"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:189
+#: admin/partials/profilegrid-mycred-admin-display.php:224
+#: admin/partials/profilegrid-mycred-admin-display.php:259
+#: admin/partials/profilegrid-mycred-admin-display.php:294
+#: admin/partials/profilegrid-mycred-admin-display.php:330
+#: admin/partials/profilegrid-mycred-admin-display.php:365
+#: admin/partials/profilegrid-mycred-admin-display.php:400
+#: admin/partials/profilegrid-mycred-admin-display.php:435
+#: admin/partials/profilegrid-mycred-admin-display.php:470
+msgid ""
+"Maximum Number of times the points will be awarded. Use 0 for no limits."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:345
+msgid "Award points to the user when he or she is promoted to Group Manager"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:521
+msgid ""
+"Award or deduct points from the user on leaving a Group he or she is a "
+"member of."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:532
+#: admin/partials/profilegrid-mycred-admin-display.php:567
+#: admin/partials/profilegrid-mycred-admin-display.php:602
+#: admin/partials/profilegrid-mycred-admin-display.php:637
+#: admin/partials/profilegrid-mycred-admin-display.php:672
+msgid ""
+"Points to be awarded to the user. Negative numbers can be used to deduct "
+"points."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:541
+#: admin/partials/profilegrid-mycred-admin-display.php:576
+#: admin/partials/profilegrid-mycred-admin-display.php:611
+#: admin/partials/profilegrid-mycred-admin-display.php:646
+#: admin/partials/profilegrid-mycred-admin-display.php:681
+msgid ""
+"Maximum Number of times the points will be awarded/ deducted. Use 0 for no "
+"limits."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:693
+msgid "Cancel"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-admin-display.php:697
+msgid "Save"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:3
+msgid "Display Purchases Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:9
+msgid ""
+"Displays Purchases tab in user profile page with thumbnails and names of the "
+"products purchased by the user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:14
+msgid "Max Number of Products Displayed"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:21
+msgid ""
+"Define the maximum number of products visible in \"Purchases\" tab of the "
+"profile."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:27
+msgid "Show Product Reviews Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:33
+msgid ""
+"Displays Product Reviews tab in user profile page with reviews of the "
+"products that the user has posted."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:38
+msgid "Show Orders in User Account"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:44
+msgid ""
+"Displays order history and status inside the 'Settings' section of user. "
+"This is only accessible to the logged in user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:49
+msgid "Show Shipping Address in User Account"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:55
+msgid ""
+"Displays and allows editing of shipping address inside the 'Settings' "
+"section of user profile. This is only accessible to the logged in user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:60
+msgid "Show Billing Address in User Account"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:66
+msgid ""
+"Displays and allows editing of billing address inside the 'Settings' section "
+"of user. This is only accessible to the logged in user."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:71
+msgid "Display Purchases Count and Total Spent"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:77
+msgid ""
+"Displays total count of products purchased and money spent by the user on "
+"their profile headers."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:82
+msgid "Visibility"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:85
+msgid "Everyone"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:86
+msgid "Group Leader Only"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:87
+msgid "Group Members Only"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:88
+msgid "Friends Only"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:89
+msgid "Private"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-group-option.php:93
+msgid ""
+"Define who will be able to see purchase count and total spent on user "
+"profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-setting-option.php:7
+msgid "myCRED"
+msgstr ""
+
+#: admin/partials/profilegrid-mycred-setting-option.php:9
+msgid "Integrate myCRED with User Profiles"
+msgstr ""
+
+#: public/partials/pg-billing-address-content.php:7
+#: public/partials/pg-shipping-address-content.php:7
+msgid "Save Address"
+msgstr ""
+
+#: public/partials/pg-my-orders.php:17 public/partials/pg-my-orders.php:33
+msgid "Date"
+msgstr ""
+
+#: public/partials/pg-my-orders.php:18 public/partials/pg-my-orders.php:36
+msgid "Status"
+msgstr ""
+
+#: public/partials/pg-my-orders.php:19 public/partials/pg-my-orders.php:39
+msgid "Total"
+msgstr ""
+
+#: public/partials/pg-my-orders.php:41
+msgid "View Order"
+msgstr ""
+
+#: public/partials/pg-my-orders.php:51
+msgid "You have not placed any orders yet."
+msgstr ""
+
+#: public/partials/pg-my-orders.php:58
+msgid "Order Details"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:22
+msgid "In Stock"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:25
+msgid "Out of stock"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:40
+#: public/partials/pg-reviews-content.php:18
+#, php-format
+msgid "<a href=\"%s\" class=\"pg-mycred-imgsrc\">%s</a>"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:44
+#: public/partials/pg-reviews-content.php:22
+#, php-format
+msgid "<img src=\"%s\" alt=\"%s\" class=\"pg-mycred-imgsrc\" />"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:44
+#: public/partials/pg-reviews-content.php:22
+msgid "Placeholder"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:55
+msgid "Total Sales"
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:67
+msgid "You did not purchase any product yet."
+msgstr ""
+
+#: public/partials/pg-purchases-content.php:67
+#, php-format
+msgid "%s did not purchase any product yet."
+msgstr ""
+
+#: public/partials/pg-reviews-content.php:42
+msgid "You did not review any products yet."
+msgstr ""
+
+#: public/partials/pg-reviews-content.php:42
+#, php-format
+msgid "%s did not review any product yet."
+msgstr ""
+
+#. Name of the plugin
+msgid "Profilegrid myCRED Integration"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Integrate popular points system for WordPress with ProfileGrid to reward "
+"your users. Display ranks and badges on user profile pages, give incentive "
+"for activities on site or penalize based on pre-set rules."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profilegrid.co"
+msgstr ""
+
+#. Author of the plugin
+msgid "profilegrid"
+msgstr ""

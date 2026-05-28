@@ -1,0 +1,232 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2019-05-15 07:26+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/class-profilegrid-user-content-admin.php:108
+msgid "Custom Tabs"
+msgstr ""
+
+#: admin/class-profilegrid-user-content-admin.php:109
+msgid "Custom Tab"
+msgstr ""
+
+#: admin/class-profilegrid-user-content-admin.php:111
+msgid "User Generated Data Settings"
+msgstr ""
+
+#: admin/class-profilegrid-user-content-admin.php:153
+#, php-format
+msgid ""
+"Profilegrid User Generated Data work with ProfileGrid Plugin. You can "
+"install it  from <a href='%s'>Here</a>."
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:246
+#, php-format
+msgctxt "%s = human-readable time difference"
+msgid "%s ago"
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:247
+msgid "no Comment"
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:247
+msgid "1 Comment"
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:247
+msgid "% Comments"
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:268
+msgid "Load More"
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:281
+msgid ""
+"You have not written any blog posts yet. Once you do, they will appear here."
+msgstr ""
+
+#: public/class-profilegrid-user-content-public.php:287
+#, php-format
+msgid "Sorry, %s has not made any blog posts yet."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:46
+#: admin/partials/profilegrid-user-content-tabs-list.php:40
+msgid "New Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:50
+msgid "Edit Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:60
+msgid "Title of the Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:66
+msgid "Title of the tab as it appears on the user profile page."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:71
+msgid "Fetch Content from"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:85
+msgid "User Custom Posts"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:93
+msgid "Custom Content"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:97
+msgid ""
+"Define if you wish to fetch user created content from custom posts or use a "
+"shortcode instead."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:110
+msgid "Post Type"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:134
+msgid ""
+"Select custom post type from which user authored content will be fetched."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:149
+msgid "Tab Content"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:176
+msgid "Paste a shortcode or static content to be displayed inside the tab."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:182
+msgid "Privacy"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:189
+msgid "Define who can see this profile tab."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:195
+msgid "Tab Visibility"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:201
+msgid "User"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:205
+msgid "User and Group Admins"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:209
+msgid "Only Admins"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:213
+msgid "Group Members."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:217
+msgid "Friends"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:221
+msgid "Logged In Users"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:225
+msgid "Public"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:237
+#: admin/partials/profilegrid-user-content-admin-display.php:56
+msgid "Cancel"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-add-tab.php:242
+#: admin/partials/profilegrid-user-content-admin-display.php:60
+msgid "Save"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-admin-display.php:30
+#: admin/partials/profilegrid-user-content-setting-option.php:7
+msgid "User Generated Data"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-admin-display.php:41
+msgid "Turn on Custom User Data Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-admin-display.php:47
+msgid ""
+"Turn on the tab in user profiles to fetch user created data from custom "
+"posts or shortcodes."
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-setting-option.php:9
+msgid "Display user authored custom post type data or shortcode"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:34
+msgid "Custom Tabs List"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:43
+msgid "Delete"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:62
+msgid "SR"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:63
+msgid "Name"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:64
+msgid "Action"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:78
+msgid "Edit"
+msgstr ""
+
+#: admin/partials/profilegrid-user-content-tabs-list.php:87
+msgid ""
+"You haven't created any custom user data tabs yet. Create one now by "
+"clicking 'New Tab' above."
+msgstr ""
+
+#. Name of the plugin
+msgid "Profilegrid Custom Profile Tabs"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add personalized tabs to user profiles to suit your business or industry. "
+"Add user authored content from any custom post type, fetch content using "
+"shortcodes or insert static content. Open doors to endless possibilities - "
+"Integrate user profiles with other plugins supporting custom post or "
+"shortcode format."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profilegrid.co"
+msgstr ""
+
+#. Author of the plugin
+msgid "profilegrid"
+msgstr ""

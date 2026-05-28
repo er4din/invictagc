@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2017, 10:30:46 AM
+    Author     : ProfileGrid
+*/
+/* Basic styling for the entire table */
+.pg-visitors-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges borders for a clean look */
+}
+
+/* Styling for table headers */
+.pg-visitors-table th {
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 8px; /* Space inside header cells */
+    text-align: left; /* Align text to the left */
+    background-color: #ffffff; /* Light grey background */
+}
+
+/* Styling for table data cells */
+.pg-visitors-table td {
+    border: 1px solid #ddd; /* Same border as headers */
+    padding: 8px; /* Space inside data cells */
+    text-align: left; /* Align text to the left */
+}
+
+/* Optional: Alternate row background for readability */
+.pg-visitors-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+/* Optional: Add hover effect for better interaction */
+.pg-visitors-table tr:hover {
+    background-color: #eaeaea; /* Slightly darker grey on hover */
+}
+
+.pg-reset-counter input#reset_counter {
+    color: #0DB14B;
+    text-decoration: none;
+    font-size: 12px;
+    box-shadow: none;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+.pg-back a {
+    cursor: pointer;
+}
+.pg-admin-visitor-count{
+    border-bottom: 1px solid;
+    text-align: center;
+    background: #fff;
+    border-color: rgb(208 210 213);
+    padding: 5px 10px;
+    font-weight: 600;
+    display: block;
+    color: #0DB14B;
+}
+.pmagic .pg-visitors-table{
+    width: 100% !important;
+}
+.pg-reset-counter{
+    display: flex;
+}
+.pg-reset-counter .pg-box-white-bg{
+    width: 25%;
+}
+.pmagic table.pg-visitors-table {
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    table-layout: auto;
+    display: inline-table;
+    margin-top: 10px ;
+}
+.pmagic table.pg-visitors-table td, .pmagic table.pg-visitors-table th {
+    padding: 8px 6px;
+    border: 0;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.pmagic table.pg-visitors-table th{
+    font-weight: 600 !important;
+}
+.pmagic table.pg-visitors-table tr:nth-child(odd) {
+    background-color: #fafafa !important;
+}
+.pmagic table.pg-visitors-table tr { 
+    background-color: #fff;
+}
+.pg-visitor-profile-data img{
+    object-fit: cover;
+    margin-bottom: 0px !important;
+}
+#pm_admin_visitor_report{
+    text-align: center;
+}
+.pg-visitor-view{
+    cursor: pointer;
+}

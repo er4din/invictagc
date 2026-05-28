@@ -1,0 +1,14 @@
+/*------ Custom Tabs ProfileGrid Extension -------*/
+
+
+/*---- Conflict  Fixes ----*/
+
+.pmagic .pm-group-view #pg-profile-tabs .pg_custom_tab_content .chosen-container-single {
+    width: 100% !important; 
+    
+}
+
+.pmagic .pg-custom-tab-content {
+    width: 100%;
+    padding: 20px 8px;
+}

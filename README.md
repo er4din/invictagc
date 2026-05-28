@@ -1,2 +1,0 @@
-# invictaGC
-invictaGC Wordpress repository

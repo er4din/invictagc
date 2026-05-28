@@ -1,0 +1,23 @@
+{
+    "name": "rb/frontpage-buddy",
+    "description": "The Frontpage Buddy plugin for WordPress",
+    "type": "wordpress-plugin",
+	"version": "1.0.0",
+	"authors": [
+        {
+            "name": "ckchaudhary",
+            "email": "ckchaudhary@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FrontPageBuddy\\": "src/"
+        },
+		"files": [
+			"src/functions-misc.php",
+			"src/functions-widgets.php",
+			"src/functions-rest-api.php"
+		]
+    },
+    "require": {}
+}

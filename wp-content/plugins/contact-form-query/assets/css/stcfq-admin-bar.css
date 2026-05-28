@@ -1,0 +1,32 @@
+#wpadminbar #wp-admin-bar-stcfq-messages-count .ab-icon:before {
+	content: "\f465";
+	top: 3px;
+}
+
+@media screen and (max-width: 782px) {
+	#wpadminbar #wp-admin-bar-stcfq-messages-count .ab-icon {
+		margin: 0;
+	}
+
+	#wpadminbar #wp-admin-bar-stcfq-messages-count .ab-icon:before {
+		display: block;
+		font-size: 34px;
+		height: 46px;
+		line-height: 1.38235294;
+		top: 0;
+	}
+
+	#wpadminbar li#wp-admin-bar-stcfq-messages-count {
+		display: block;
+	}
+
+	#wpadminbar #wp-admin-bar-stcfq-messages-count {
+		position: static;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#wpadminbar li#wp-admin-bar-stcfq-messages-count {
+		display: none;
+	}
+}

@@ -1,0 +1,301 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WIP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-24 18:16+0100\n"
+"PO-Revision-Date: 2015-09-11 19:05+0100\n"
+"Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;esc_html_e;esc_html__;esc_html_x:1,2c;esc_attr__;esc_attr_e;_n_noop:1,2;_n_noop;_n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: core/extras/changelog.php:6
+msgid "v1.0.0"
+msgstr ""
+
+#: core/extras/changelog.php:7
+msgid "Release date : November, 24 - 2024"
+msgstr ""
+
+#: core/extras/changelog.php:13
+msgid "Initial version"
+msgstr ""
+
+#: functions.php:43
+msgid "Open the main menu"
+msgstr ""
+
+#: functions.php:44
+msgid "Close the main menu"
+msgstr ""
+
+#: functions.php:45
+msgid "expand submenu"
+msgstr ""
+
+#: functions.php:46
+msgid "collapse submenu"
+msgstr ""
+
+#: functions.php:147
+msgid "All categories"
+msgstr ""
+
+#: functions.php:193
+msgid "Enable the placeholder"
+msgstr ""
+
+#: functions.php:194
+msgid "Would you like to display a placeholder when the featured image is missing, on the homepage, archives, and search results?"
+msgstr ""
+
+#: functions.php:212 functions.php:320
+msgid "Font"
+msgstr ""
+
+#: functions.php:213
+msgid "Choose a font for the logo."
+msgstr ""
+
+#: functions.php:230 functions.php:338
+msgid "Weight"
+msgstr ""
+
+#: functions.php:231
+msgid "Choose a font weight for the logo."
+msgstr ""
+
+#: functions.php:233 functions.php:279 functions.php:341 functions.php:387
+msgid "100"
+msgstr ""
+
+#: functions.php:234 functions.php:280 functions.php:342 functions.php:388
+msgid "200"
+msgstr ""
+
+#: functions.php:235 functions.php:281 functions.php:343 functions.php:389
+msgid "300"
+msgstr ""
+
+#: functions.php:236 functions.php:282 functions.php:344 functions.php:390
+msgid "400"
+msgstr ""
+
+#: functions.php:237 functions.php:283 functions.php:345 functions.php:391
+msgid "500"
+msgstr ""
+
+#: functions.php:238 functions.php:284 functions.php:346 functions.php:392
+msgid "600"
+msgstr ""
+
+#: functions.php:239 functions.php:285 functions.php:347 functions.php:393
+msgid "700"
+msgstr ""
+
+#: functions.php:240 functions.php:286 functions.php:348 functions.php:394
+msgid "800"
+msgstr ""
+
+#: functions.php:241 functions.php:287 functions.php:349 functions.php:395
+msgid "900"
+msgstr ""
+
+#: functions.php:258
+msgid "Site identity font"
+msgstr ""
+
+#: functions.php:259
+msgid "Choose a font for the site identity."
+msgstr ""
+
+#: functions.php:276
+msgid "Site identity font weight"
+msgstr ""
+
+#: functions.php:277
+msgid "Choose a font weight for the site identity."
+msgstr ""
+
+#: functions.php:303
+msgid "Site identity font size"
+msgstr ""
+
+#: functions.php:304
+msgid "Insert a size, for the site identity (For example, 40px) "
+msgstr ""
+
+#: functions.php:321
+msgid "Choose a font for the menu."
+msgstr ""
+
+#: functions.php:339
+msgid "Choose a font weight for the menu."
+msgstr ""
+
+#: functions.php:366
+msgid "Headlines font"
+msgstr ""
+
+#: functions.php:367
+msgid "Choose a font for the headlines."
+msgstr ""
+
+#: functions.php:384
+msgid "Headlines font weight"
+msgstr ""
+
+#: functions.php:385
+msgid "Choose a font weight for the headlines."
+msgstr ""
+
+#: functions.php:403
+msgid "Recent posts grid"
+msgstr ""
+
+#: functions.php:404
+msgid "From this section you can manage the recent posts grid on the homepage."
+msgstr ""
+
+#: functions.php:419
+msgid "Recent posts"
+msgstr ""
+
+#: functions.php:420
+msgid "Would you like to enable the recent posts grid on the homepage?"
+msgstr ""
+
+#: functions.php:436
+msgid "Recent posts only on the first page of pagination"
+msgstr ""
+
+#: functions.php:437
+msgid "Would you like to show the recent posts grid only on the first page of pagination on your homepage? Enable this option to display the recent posts grid exclusively on the first page."
+msgstr ""
+
+#: functions.php:453
+msgid "Show recent posts section title"
+msgstr ""
+
+#: functions.php:454
+msgid "Would you like to show the recent posts section title?"
+msgstr ""
+
+#: functions.php:464 template-parts/recent-posts.php:43
+msgid "Recent posts"
+msgstr ""
+
+#: functions.php:471
+msgid "Recent posts section title"
+msgstr ""
+
+#: functions.php:472
+msgid "Insert the title of recent posts section"
+msgstr ""
+
+#: functions.php:488
+msgid "Recent posts layout"
+msgstr ""
+
+#: functions.php:489
+msgid "Select a layout for the recent posts grid."
+msgstr ""
+
+#: functions.php:491
+msgid "Layout 1"
+msgstr ""
+
+#: functions.php:492
+msgid "Layout 2"
+msgstr ""
+
+#: functions.php:493
+msgid "Layout 3"
+msgstr ""
+
+#: functions.php:494
+msgid "Layout 4"
+msgstr ""
+
+#: functions.php:495
+msgid "Layout 5"
+msgstr ""
+
+#: functions.php:496
+msgid "Layout 6"
+msgstr ""
+
+#: functions.php:497
+msgid "Layout 7"
+msgstr ""
+
+#: functions.php:514
+msgid "Recent posts category"
+msgstr ""
+
+#: functions.php:515
+msgid "Select a category for the Recent posts grid."
+msgstr ""
+
+#: functions.php:532
+msgid "Recent posts orderby"
+msgstr ""
+
+#: functions.php:533
+msgid "How you want to order the articles?"
+msgstr ""
+
+#: functions.php:535
+msgid "ID"
+msgstr ""
+
+#: functions.php:536
+msgid "Author"
+msgstr ""
+
+#: functions.php:537
+msgid "Post title"
+msgstr ""
+
+#: functions.php:538
+msgid "Date"
+msgstr ""
+
+#: functions.php:539
+msgid "Number of comments"
+msgstr ""
+
+#: functions.php:556
+msgid "Recent posts sort order"
+msgstr ""
+
+#: functions.php:557
+msgid "Select the order of Recent posts"
+msgstr ""
+
+#: functions.php:559
+msgid "Ascending"
+msgstr ""
+
+#: functions.php:560
+msgid "Descending"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:63
+msgid "Menu"
+msgstr ""
+
+#~ msgid "Category"
+#~ msgstr "Categorisa"

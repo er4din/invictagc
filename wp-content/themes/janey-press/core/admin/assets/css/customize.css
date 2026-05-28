@@ -1,0 +1,12 @@
+/*
+ * Copyright 2024, ThemeinProgress
+ * Licensed under MIT license
+ * https://opensource.org/licenses/mit-license.php
+ */
+
+#sub-accordion-section-logo_section .customize-control-select select option:disabled,
+#sub-accordion-section-menu_section .customize-control-select select option:disabled,
+#sub-accordion-section-mobile_menu_section .customize-control-select select option:disabled,
+#sub-accordion-section-headlines_section .customize-control-select select option:disabled {
+	color: #ccc;
+}

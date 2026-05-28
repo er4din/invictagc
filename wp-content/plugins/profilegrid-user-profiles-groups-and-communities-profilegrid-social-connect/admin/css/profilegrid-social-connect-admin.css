@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2017, 10:30:46 AM
+    Author     : ProfileGrid
+*/
+
+
+div[id*="profilegrid_social_login"] .widget-top {
+    background: #4bafe1;
+    color:#fff;
+}
+
+div[id*="profilegrid_social_login"] .widget-top .widget-title h3, 
+div[id*="profilegrid_social_login"] .widget-top .widget-title h3 span.in-widget-title {
+    color:#fff;
+}
+
+div[id*="profilegrid_social_login"] .widget-top .widget-title h3 .in-widget-title
+{
+    color:#fff;
+}
+
+
+#available-widgets div[id*="widget-tpl-profilegrid_social_login"] {
+    background-color: #4aafe1 !important;
+}
+
+#available-widgets div[id*="widget-tpl-profilegrid_social_login"] .widget-description { 
+    color:#fff;
+}
+
+.copy-notification {
+    display: none;
+    position: fixed;
+    top: 32px;
+    left: 89%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    font-size: 14px;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+.pm-copy-btn{
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    padding: 4px 15px;
+    line-height: 0px;
+    margin-left: 15px;
+    border: 1px solid #E6E6E6;
+    cursor: pointer;
+}

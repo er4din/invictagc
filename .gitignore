@@ -17,9 +17,22 @@ wp-config-sample.php
 # Cache and generated files
 /wp-content/cache/
 /wp-content/upgrade/
+/wp-content/upgrade-temp-backup/
 /wp-content/backup-db/
 /wp-content/advanced-cache.php
 /wp-content/wp-cache-config.php
+/wp-content/litespeed/
+/wp-content/fonts/
+/wp-content/languages/
+
+# Backups
+/wp-content/ai1wm-backups/
+
+# Nested/misplaced wp-content
+/wp-content/wp-content/
+
+# Log files in wp-content root
+/wp-content/*.txt
 
 # Logs
 *.log

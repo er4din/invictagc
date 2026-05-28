@@ -1,0 +1,90 @@
+.pm-user-mycred-rank-logo img{width: 50px;}
+.pg-badge-gray img
+{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.pg-default-gray-badge{
+    background: #eee;
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-radius: 50%;}
+
+
+/* Progress Bar Css start */
+
+
+.pmagic .mycred-rank-progress .rank-progress-bar { 
+    height: 100%;
+    max-width: 100%;
+}
+
+.pmagic .mycred-rank-progress{    
+    width: 100%;
+    background-color: #e8e8e8;
+    float: left;
+    height: 7px;
+    margin-top: 12px;
+}
+
+/* Progress Bar Css end*/
+
+.pmagic .pm-user-mycred-rank-points {  
+    width: 14%;
+    margin-top: 25px;
+}
+
+.pmagic .pm-user-mycred-rank-logo img { 
+    width: 22px;
+}
+
+
+.pmagic #pg-mycred-badges .pg-badge {
+    margin: 15px 4px;
+    max-width: 100%;
+}
+
+.pmagic #pg-my-points #pg-mycred-balance {   
+    width: 98%;
+    margin-left: 2%;
+}
+
+.pmagic #pg-my-points .mycred-history-wrapper {   
+    width: 98%;
+    margin-left: 2%;   
+    float: left;
+}
+
+.pmagic .pm-user-mycred-rank-points .pm-user-mycred-rank .pm-user-mycred-rank-title {
+    margin-right: 5px;    
+    text-transform: uppercase;
+}
+
+.pmagic #pg-my-points .mycred-history-wrapper nav ul.pagination { margin-bottom: 10px;}
+
+.pmagic #pg-my-points .mycred-history-wrapper nav ul li {display: inline-block;}
+.pmagic #pg-my-points .mycred-history-wrapper nav ul.pagination:after,
+.pmagic #pg-my-points .mycred-history-wrapper nav ul.pagination:before{ 
+    display:none
+}
+
+.pmagic #pg-my-points .mycred-history-wrapper .row.pagination-top,
+.pmagic #pg-my-points .mycred-history-wrapper .row.pagination-bottom {  
+    margin: 0px;
+}
+
+
+.pmagic #pg-mycred-badges .pg-badge img {   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table {}
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table th {}
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table tr {}
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table td {}
+
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table tr:after{ display: none;}
+.pmagic #pg-my-points .mycred-history-wrapper table.mycred-table tr:before{display: none;}

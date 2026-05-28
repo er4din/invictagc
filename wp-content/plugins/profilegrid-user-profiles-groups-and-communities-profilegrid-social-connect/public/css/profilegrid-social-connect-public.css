@@ -1,0 +1,263 @@
+/*------ social-connect Extension -------*/
+
+#pg_social_wrapper {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+
+#pg_social_wrapper.pg-social-connect-register-wrapper, #pg_social_wrapper.pg-social-connect-login-wrapper {
+    flex-direction: column;    
+}
+
+#pg-settings-container #pg_social_wrapper{
+    flex-direction: column;
+}
+#pg-settings-container #pg_social_wrapper .pg-social-btn span {
+    margin-right: 15px;
+}
+#pg-settings-container #pg_social_wrapper #pg_twitter_btn span {
+    margin-right: 10px !important;
+}
+#pg_social_wrapper .pg-social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 350px;
+    height: 46px;
+    border-radius: 4px;
+    margin: 5px 10px 5px 0px;
+    width: 100%;
+    font-size: 14px;
+}
+#pg_twitter_btn span{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+#pg_google_btn span{
+    margin-right: 14px !important;
+}
+#pg_social_wrapper .pg-social-btn a{  
+    display: flex;
+    align-items: center;  
+    text-transform: none;
+    font-weight: normal;
+    border-radius: 4px;
+    font-family: arial;
+    text-align: left;
+    border: 0px;
+    box-shadow: none;
+    background-image: none;
+    color: #fff;
+    width: 100%;
+    width: calc(100% - 34px);
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+#pg_social_wrapper .pg-social-btn span {    
+    display: flex;
+    margin-right: 10px;
+}
+
+#pg_social_wrapper .pg-social-btn span svg {fill:#fff;}
+
+#pg_social_wrapper #pg_faceook_btn.pg-social-btn {background-color: #3b5998;}
+#pg_social_wrapper #pg_google_btn.pg-social-btn{background-color: #fff;}
+#pg_social_wrapper #pg_linkedin_btn.pg-social-btn {background-color: #0077b5;}
+#pg_social_wrapper #pg_twitter_btn.pg-social-btn{background-color: #000000;}
+
+#pg_social_wrapper #pg_google_btn.pg-social-btn {
+    background-image: none;
+    border: 1px solid #dadce0;
+    color: #3c4043;
+}
+
+#pg_social_wrapper #pg_google_btn.pg-social-btn a {
+    color: #3c4043;
+}
+
+
+/* --- Social connect my profile ----*/
+
+.pg_social_block .pg-social-image {}
+.pg-social-profile-info .pg-social-image img {  
+    border-radius: 100%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+} 
+
+.pg_social_block .pg-social-url {    
+    padding-left: 10px;
+}
+.pg_social_block .pg-social-disconnect{  
+    padding-left: 10px;
+}
+
+
+#pg_social_wrapper .pg-social-profile-info {
+    border: 1px solid #f1f1f1;
+    padding: 10px;
+    max-width: 400px;
+    background-color: #fdfdfd;
+    margin: 10px 0px;
+    border-radius: 3px;
+}
+
+#pg_social_wrapper .pg_social_block {
+    text-align: left;
+    padding-left: 10px;
+    width: 70%;
+}
+
+#pg_social_wrapper .pg_social_block .pg-social-disconnect a {    
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.pg-social-profile-info .pg-social-icon {}
+.pg-social-profile-info .pg-social-icon svg {}
+
+.pg-social-profile-info.pg-social-facebook{position: relative;}
+.pg-social-profile-info.pg-social-facebook:after {  
+    background-image: url(../partials/images/pg-facebook.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    background-size: cover;
+    top: 15px;
+    right: 10px;
+    opacity: 0.15;
+    
+    
+}
+.pg-social-profile-info.pg-social-linkedin{position: relative;}
+.pg-social-profile-info.pg-social-linkedin:after {  
+    background-image: url(../partials/images/linkedin.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    background-size: cover;
+    top: 15px;
+    right: 10px;
+    opacity: 0.15;
+    
+    
+}
+
+.pg-social-profile-info.pg-social-googleplus{position: relative;}
+.pg-social-profile-info.pg-social-googleplus:after {  
+    background-image: url(../partials/images/pg-googleplus.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    background-size: cover;
+    top: 15px;
+    right: 10px;
+    opacity: 0.15;  
+}
+
+.pg-social-profile-info.pg-social-twitter{position: relative;}
+.pg-social-profile-info.pg-social-twitter:after {  
+    background-image: url(../partials/images/pg-twitter.svg);
+    background-repeat: no-repeat;
+    content: "";
+    width: 45px;
+    height: 50px;
+    float: left;
+    position: absolute;
+    background-size: cover;
+    top: 25px;
+    right: 10px;
+    opacity: 0.15;  
+}
+
+
+
+/* --- Social Login Widget ---- */
+
+.widget_profilegrid_social_login #pg_social_wrapper {
+    width: 100%;
+}
+
+.widget_profilegrid_social_login #pg_social_wrapper .pg-social-btn a {   
+    padding: 0px 5px 0px 6px;
+}
+
+.widget_profilegrid_social_login #pg_social_wrapper .pg-social-btn span { 
+    height: auto;
+    margin: 10px 5px 0px 5px;
+    width: 16px
+}
+
+/* --- Social Login Narrow Widget ---- */
+
+.widget_profilegrid_social_login #pg_social_wrapper.pg-narrow-widget .pg-social-btn a {
+    font-size: 0px;
+    z-index: 99999;
+    position: relative;
+}
+
+.widget_profilegrid_social_login #pg_social_wrapper.pg-narrow-widget .pg-social-btn  { position: relative;}
+
+.widget_profilegrid_social_login #pg_social_wrapper.pg-narrow-widget .pg-social-btn span{   
+    width: 20px;
+    position: absolute;
+    left: 0px;
+}
+
+.widget_profilegrid_social_login #pg_social_wrapper.pg-narrow-widget .pg-social-btn span:after {
+  /*  content: " Login"; */
+    position: absolute;
+    top: 3px;
+    left: 30px;
+    width: 102px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*---- Responsive CSS -----*/
+
+
+@media only screen and (max-width:1200px)  {
+
+    
+    .widget_profilegrid_social_login #pg_social_wrapper.pg-narrow-widget .pg-social-btn span {   
+        left: 10px;
+    }
+    
+}
+
+@media only screen and (max-width:979px) {
+    
+    #pg_social_wrapper { 
+        
+    }
+     
+}
+
+
+@media only screen and (max-width:760px) {
+    
+    #pg_social_wrapper { 
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:479px) {
+    
+    #pg_social_wrapper { width: 100%;}
+}

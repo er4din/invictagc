@@ -1,0 +1,285 @@
+#pg-ig-show_photos { 
+    text-align: center;
+}
+
+#pg-ig-show_photos .pg-insta-column {  
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+#pg-ig-show_photos .pg-insta-column a img {   
+    width: 96%;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 4%;  
+    object-fit: cover;
+}
+
+#pg-ig-show_photos .pg-insta-column a.pg-insta-photo { 
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    float: left
+}
+
+#pg-ig-show_photos .pg-insta-column a.pg-insta-photo:hover img ~ .pg-insta-photo-hover{  
+    background-color: rgba(0, 0, 0, 0.32);
+    position: absolute;
+    height: 96%;
+    left: 2%;
+    top: 0px;
+    z-index: 9999;
+    display: block !important;
+    width: 96%;
+    border-radius: 12px;
+    margin-bottom: 4%;
+}
+
+
+#pg-ig-show_photos {
+    text-align: center;
+}
+
+#pg-ig-show_photos .pg-insta-column {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+
+
+
+#pg-ig-show_photos {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    /* Or set a fixed height */
+}
+/* SLIDER */
+
+#pg-ig-show_photos .pg-insta-slider {
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+.pg-insta-column-wrap{ 
+    height: 100%;
+    width: 100%;
+    display: none;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.pg-insta-column-wrap:first-child {
+    display: block;
+}
+
+.pmagic .pg-ig-user-details { 
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+.pmagic .pg-ig-user-details a { 
+    color: #fff;
+    background-color: #3d719c;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.pmagic .pg-ig-user-details a:hover {
+    color:#fff;
+}
+
+
+.pmagic .pg-ig-user-details a svg {
+    width: 22px;
+    fill: #fff;
+    float: left;
+    margin-right: 3px;
+}
+
+.pmagic .pg-insta-disconnect {
+    padding: 12px 15px;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+
+.pg-insta-photo-modal-wrap {
+    display: block;
+    float: left;
+    width: 100%;
+    max-width: 640px;
+    background-color: #FFF;
+    position: fixed;
+    top: 10%;
+    overflow: hidden;
+    z-index: 9999999;
+    box-shadow: 0 0 20px rgb(150, 150, 150);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    left: 30%;
+    left: calc(50% - 300px);
+    overflow-y: auto;
+    max-height: 90%;
+}
+
+
+
+.pg-insta-photo-modal-close {
+    font-size: 20px;
+    color: #fff;
+    position: fixed;
+    top: 53px;
+    right: 34px;
+    z-index: 9999999;
+    cursor: pointer;
+}
+
+.pg-insta-photo-modal-wrap img.pg-insta-modal-img {}
+
+
+.pg-connect-instagram { 
+    text-align: center
+}
+
+.pg-connect-instagram .pg-connect-instagram-wrap {      
+    background-color: #e4fbff;
+    width: 45%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 50px 0px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+
+.pg-connect-instagram .pg-connect-instagram-wrap .pg-insta-connect-icon svg {    
+    height: 50px;
+    fill: #33a0dc;
+}
+
+.pg-connect-instagram .pg-connect-instagram-wrap .pg-insta-connect-icon {  
+    margin-bottom: 20px;
+}
+
+.pg-connect-instagram .pg-connect-instagram-wrap a .pg-insta-connect  { color: #33a0dc;}
+
+
+/* css model as slider */
+
+/* The Modal (background) */
+.pg-insta-modal {
+  display: none;
+  position: fixed;
+  z-index: 9;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+ background-color: #000;
+ background-color: rgba(0, 0, 0, 0.89);
+}
+
+/* Modal Content */
+.pg-insta-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+    max-width: 600px;
+}
+
+.pg-insta-photo-slides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.pg-insta-photo-prev,
+.pg-insta-photo-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none; 
+    background-color: #000;
+}
+
+/* Position the "next button" to the right */
+.pg-insta-photo-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.pg-insta-photo-prev {left: 0px}
+.pg-insta-photo-next{ right:0px}
+
+/* On hover, add a black background color with a little bit see-through */
+.pg-insta-photo-prev:hover,
+.pg-insta-photo-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.pg-insta-photo-number{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#instagram-link
+{
+    padding:20px;
+    width:100%;
+    Font-size:16px;
+    text-align:center;
+}
+
+#instagram-link a 
+{
+    background-color: #e4fbff;
+    padding: 10px;
+  
+}
+
+.pg-insta-error
+{
+    padding: 20px;
+    text-align: center;
+    color: red;
+    font-size: 18px;
+}

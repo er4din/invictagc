@@ -1,0 +1,211 @@
+
+/* Basic styling for the entire table */
+.pg-visitors-table {
+    width: 100%;
+    border-collapse: collapse; /* Merges borders for a clean look */
+}
+/* Optional: Alternate row background for readability */
+.pg-visitors-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light grey for even rows */
+}
+
+/* Optional: Add hover effect for better interaction */
+
+/* .pg-visitors-table tr:hover {
+    background-color: #eaeaea;
+} */
+
+.pg-reset-counter {
+    margin: 25px 0;
+}
+
+input#update_existing_users.pm_toggle {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+}
+
+input.pm_toggle+label {
+    width: 48px;
+    height: 20px;
+    background-color: #fff;
+    background-color: #DCDCDC;
+    border: 2px solid #DCDCDC;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
+    border-radius: 9px;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+    box-sizing: border-box;
+}
+
+input.pm_toggle+label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.pm_toggle+label:after {
+    top: 3px;
+    left: 3px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    background-color: #6c7781;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: margin 0.2s, background 0.2s;
+    -moz-transition: margin 0.2s, background 0.2s;
+    -o-transition: margin 0.2s, background 0.2s;
+    transition: margin 0.2s, background 0.2s;
+}
+
+input.pm_toggle+label:before {
+    top: 5px;
+    left: 30px;
+    bottom: 2px;
+    right: 2px;
+    height: 4px;
+    width: 4px;
+    border: 1px solid #555d66;
+    background-color: white;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.24s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+input.pm_toggle+label:before,
+input.pm_toggle+label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+
+input.pm_toggle:checked+label {
+    background-color: rgb(var(--pg-visitor-themeColor)); /* Fallback color if variable is not defined */
+    border: 9px solid transparent;
+}
+
+input.pm_toggle:checked+label:before {
+    top: -3px;
+    left: -2px;
+    bottom: 0px;
+    right: 0px;
+    height: 6px;
+    width: 1px;
+    border: 0px solid #ffffff;
+    background-color: #fff;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.24s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+input.pm_toggle:checked+label:after {
+    margin-left: 12px;
+    background-color: #fff;
+    top: -4px;
+    left: 10px
+}
+
+.uimrow {
+    display: flex;
+    align-items: center;
+    /* Vertically center items */
+    width: 100%;
+    /* Ensure the row takes full width */
+}
+
+.uimfield {
+    margin-right: 20px;
+    /* Space between .uimfield and .uiminput */
+}
+
+.uiminput {
+    margin-right: 20px;
+    /* Space between .uiminput and .uimnote */
+    margin-left: 10px;
+    /* Adjust this value to move .uiminput slightly forward */
+}
+.pm_toggle {
+    display: none;
+}
+.pmagic table.pg-visitors-table {
+    border-collapse: collapse;
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+    border: 0;
+    table-layout: auto;
+    display: inline-table;
+    margin: 0;
+}
+.pmagic table.pg-visitors-table td, .pmagic table.pg-visitors-table th {
+    padding: 8px 6px;
+    border: 0;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: center;
+}
+.pmagic table.pg-visitors-table th{
+    font-weight: 600 !important;
+}
+.pmagic table.pg-visitors-table tbody tr:nth-child(odd) {
+    background-color: #fafafa ;
+}
+.pmagic table.pg-visitors-table tr { 
+    background-color: #fff;
+}
+.pg-visitor-profile-data img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0px !important;
+}
+.pg-visitor-container-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+.pm_visitor_counts{
+    border-bottom: 1px solid;
+    text-align: center;
+    margin: 10px 0px;
+    background: #fff;
+    border-color: rgb(208 210 213);
+    color: rgb(var(--pg-visitor-themeColor));
+    padding: 5px 10px;
+    font-weight: 600;
+}
+#pm_visitor_report{
+    text-align: center;
+    margin-top: 10px;
+}
+#reset_counter{
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

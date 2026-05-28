@@ -1,0 +1,372 @@
+.pmagic *{outline:0px;}
+
+.pg-block{ margin: 15px auto;}
+.pmagic .pg-photo-albums {
+    float: left;
+    width: 100%; 
+}
+.pmagic .pg-photo-albums li.pg-photo-album {
+    margin: 8px 10px 8px 0px;
+    position: relative;
+}
+
+.pmagic .pg-photo-albums li.pg-photo-album::before{ display: none;}
+.pmagic .pg-photo-albums li.pg-photo-album .pg-photo-album-thumb {
+    cursor: pointer;
+}
+
+.pmagic .pg-photo-album-thumb img  {
+    width: 150px;
+    height: 150px;
+}
+
+.pmagic .pg-create-album{    
+    border: 1px solid #ccc;
+    width: 150px;
+    height: 150px;
+}
+
+.pmagic #pg-photo-albums-wrap.pg-photo-albums-hide{
+    display: none;
+
+}
+
+.pmagic  #pm_album.pg-photo-pane-hide { display: none;}
+
+.pmagic  #pg_group_photos_container #pm_album {    
+    margin-top: 20px;
+}
+.pmagic .pg-album-btns {    
+    border-top: 1px solid #e1e1e1;
+    padding: 8px 0px;
+}
+
+.pmagic .pg-album-btns a {    
+    text-transform: uppercase;
+    padding-right: 10px;
+}
+
+
+
+
+/*----- Album Uploader--------*/
+
+.pmagic .pg-album-image-uploader {
+    padding: 34px;
+    margin-bottom: 20px;
+    border-color: #9c9b9b;
+    border-color: rgba(0,0,0,.1);
+    border-style: dashed;
+    text-align: center;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.pmagic .pg-album-image-uploader textarea {   
+    width: 100%;
+    min-height: 70px;
+    max-height: 90px;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    margin: 10px auto;
+   
+}
+
+.pmagic .pg-album-image-uploader input[type=file] { 
+    display: inline-block;
+}
+
+.pmagic .pg-album-image-uploader .pg-upload-image-btn{
+    text-transform: uppercase;
+}
+
+
+/*---- image comments popup---*/
+
+
+.pmagic #pm_image_popup .pm-popup-container.pg-comments-popup {    
+    width: 90%;
+    left: 5%;
+    right: 5%;
+}
+
+
+.pmagic .pg-album-single-img {
+
+    width: 70%;
+    margin-right: 1%;
+    text-align: center;
+
+    padding: 30px;
+
+}
+
+.pmagic .pg-album-single-img img{}
+
+.pmagic .pg-comments-section{ width: 28%;}
+
+.pmagic .pg-comments-section .pg-comment_result {    
+    overflow: auto;
+    max-height: 600px;
+    width: 100%;}
+
+.pmagic .pg-comment_result .pg-image-comment-thread  {
+    background-color: #efefef;
+    padding: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 1px;
+    border-left: 2px solid rgba(202, 202, 202, 0.94);
+    width: 100%;
+}
+
+.pmagic .pg-image-comment-thread .pg-comment-author img  {    
+    border-radius: 100%;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    margin: 8px 4px 4px 0px;
+    width: 52px;
+    height: 52px;
+}
+
+.pmagic .pg-comments-section .pg-uploaded-by  {
+    min-height: 45px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.pmagic .pg-comments-section .pg-uploaded-by svg { cursor: pointer;}
+
+.pmagic .pg-comments-section .pg-comment_result .pg-total-comments-count {
+    padding: 10px 0px;
+}
+
+.pmagic .pg-comments-section .pg-comment_result .pg-total-comments-count span {
+    padding-right: 5px;
+}
+
+.pmagic .pg-comment-meta .pg-photo-comment-author {    
+    padding-right: 10px;
+}
+.pmagic .pg-comment-meta-wrap { 
+    width: 84%;
+    width: calc(100% - 70px);
+    margin: 5px 0px 0px 10px;
+
+}
+.pmagic .pg-comment-meta-wrap .pg-comment-content {    
+    font-size: 12px;
+}
+
+.pmagic .pg-comment-meta-wrap textarea { 
+    width: 100%;
+    height: 85px;
+    box-shadow: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+
+}
+
+.pmagic .pg-comment-meta-wrap .add-new-comment {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/*-----Create New And Edit Album PopUp----*/
+
+.pmagic #pg-photo-albums-wrap .pg-create-new-album .pg-new-album-form,
+.pmagic .pg-edit-album .pg-edit-album-form {   
+    display: inline-block;
+    padding: 15px;
+    width: 100%;
+}
+
+.pmagic .pg-create-album .pg-new-album-btn { 
+    padding: 50px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pmagic .pg-create-new-album .pm-popup-container { 
+    min-height: 300px;
+}
+.pmagic .pg-create-new-album a.pg-create-album-btn,
+.pmagic .pg-edit-album a.pg-edit-album-btn{    
+    padding: 15px;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+.pmagic .pg-album-form-row {    
+    margin: 5px auto;
+}
+.pmagic .pg-album-form-row input, 
+.pmagic .pg-album-form-row textarea, 
+.pmagic .pg-album-form-row select{   
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1; 
+    width: 100%; 
+    font-size: 14px !important;
+    margin-bottom: 12px;
+}
+
+
+
+/*----Single Album Page---*/
+
+.pmagic .pg-album-title {font-size: 20px;}
+.pmagic .pg-album-meta {font-size: 12px;}
+.pmagic .pg-album-description { 
+    font-size: 12px;   
+    margin-top: 20px;
+}
+
+.pmagic .pg-photo-albums li.pg-photo-album .pg-photo-comments {    
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.28);
+}
+
+
+
+.pmagic .pg_group_photos_container #pm_album { 
+    margin-top: 20px;
+}
+
+.pmagic .pg-photo-albums-hide{ display:none;}
+
+.pmagic .pg-media-uploader {   
+    position: relative;
+    border: 1px dashed rgb(201, 214, 221);
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px;
+    width: 100%;
+    background-color: rgb(241, 246, 249);
+    min-height: 200px;
+}
+
+.pmagic .pg-add-photo-btn { text-align: center;}
+.pmagic .pg-add-photo-btn a { cursor: pointer;}
+
+.pmagic .pg-media-uploader h1 {    
+    font-size: 16px;
+    font-weight: bold;
+}
+.pmagic .pg-media-uploader .pg-upload-area {
+    height: 100%;
+    min-height: 170px;
+    cursor: pointer;
+}
+
+.pmagic .pg-media-uploader .pg-upload-area .pg-drag-and-drop-title {   
+    font-size: 16px;
+}
+
+.pmagic .pg-media-uploader .pg-dfiles {    
+    width: 33%;
+    text-align: left;
+    min-height: 80px;
+}
+
+
+.pmagic .pg-progress-wrp {
+    position: relative;
+    background: #c9d6dd;
+    width: 80%;
+    float: left;
+    margin-left: 6px;
+}
+.pmagic .pg-progress-wrp .pg-progress-bar{
+    height: 6px;
+    border-radius: 3px;
+    background-color: green;
+    width: 0;
+}
+.pmagic .pg-progress-wrp .pg-upload-status{
+    top:3px;
+    left:50%;
+    position:absolute;
+    display:none;
+    color: #000000;
+} 
+
+.pmagic .pg-dfiles-icon {font-size: 12px;}
+
+.pmagic .pg-dfiles-icon svg {
+    width:50px;
+    float: left;}
+
+.pmagic .pg-media-uploader .pg-upload-action input[type="submit"],
+.pmagic .pg-media-uploader .pg-upload-action input[type="button"] {    
+    background-color: transparent;
+    box-shadow: none;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-family: inherit;
+    font-size: 14px;
+    border: 0px
+}
+
+.pmagic .pg-dfiles-icon img {}
+
+.pmagic .pg-upload-success {
+    color: #7dbb28;
+    font-size: 12px;
+
+}
+.pmagic .pg-upload-failed {
+    color: red;
+    font-size: 12px;
+}
+
+.pmagic .pm-media-loader-wrap .pm-loader {
+    margin: 0px;    
+    width: 30px;
+    height: 30px;
+}
+
+.pmagic .pm-media-loader-wrap .pm-uploding-msg {   
+    font-size: 12px;
+    margin: 10px;
+}
+
+.pmagic .pm-success-msg-img svg {
+    width: 50px;
+}
+
+.pmagic .pm_album_image_upload_form textarea#upload_image_caption {    
+    font-size: 14px;
+    font-weight: normal;
+    height: 80px;
+}
+.pmagic #pg-image-caption { font-size: 12px;}
+
+.pmagic #pg-image-caption textarea#pg-img-caption-editor {   
+    font-size: 12px ;
+    line-height: 20px;
+}
+.pmagic #pg-image-caption  a {    
+    padding: 6px;
+}
+
+.pmagic .pg-group-photo-load-more{    
+    text-align: center;
+    cursor: pointer;
+}
+.pmagic .pg-comment-meta span {    
+    font-size: 12px;
+}
+
+.pmagic .pm-delete-comment-btn {    
+    float: right;
+}
+

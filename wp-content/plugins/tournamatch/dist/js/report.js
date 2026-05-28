@@ -1,0 +1,1 @@
+(()=>{var l;(l=jQuery)("#challenge_id option").each((function(t,a){var e;"-1"!=l(a).val()&&l(a).text(("lll",e=l(a).text(),moment.utc(e).local().format("lll")))}))})();

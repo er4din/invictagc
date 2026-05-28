@@ -1,0 +1,366 @@
+/*
+Theme Name: News Host
+Theme URI: https://themeansar.com/free-themes/newshost-free-blog-magazine-elementor-wordpress-theme/
+Author: Themeansar
+Author URI: https://themeansar.com
+Description: News Host is a fast, clean, modern-looking Best Responsive News Magazine WordPress theme. The theme is fully widgetized, so users can manage the content by using easy to use widgets. News Host is suitable for dynamic news, newspapers, magazine, publishers, blogs, editors, online and gaming magazines, newsportals,personal blogs, newspaper, publishing or review siteand any creative website. News Host is SEO friendly, WPML,Gutenberg, translation and RTL ready. Live preview : https://newsup.themeansar.com/news-host/ and documentation at https://docs.themeansar.com/docs/newsup/
+Version: 0.2
+Requires PHP: 7.4
+Requires at least: 6.6
+Tested up to: 6.9
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: newsup
+Text Domain: news-host
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+News Host WordPress Theme is child theme of Newsup, Copyright 2020 Themeansar
+News Host is distributed under the terms of the GNU General Public License v3
+
+News Host is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+:root{
+	--bodyFont: 'Inter Tight', sans-serif;
+	--headFont: "Inter Tight", sans-serif;
+    --radius: 3px;
+    
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    letter-spacing: 0.3px;
+}
+body{
+    letter-spacing: 0.3px;
+}
+a:focus {
+    outline: 1px solid;
+}
+span.time {
+    margin-left: 5px;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+}
+.mg-social li span.icon-soci { 
+    float: unset;
+    display: inline-block;
+}
+.mg-headwidget.center .heacent {
+    margin-top: unset !important;
+}
+.mg-headwidget.center .logo-center, .mg-headwidget.center .navbar-header, .mg-headwidget.center .site-branding-text  {
+    float: none;
+    text-align: center;
+}
+.homemain .mg-blog-post.lg{
+    height: 580px;
+    border-radius: var(--radius);
+}
+.mg-headwidget.center .navbar-brand {
+    float: none;
+    display: inline-block;
+    margin: 8px auto 0 auto;
+    font-weight: bold;
+}
+.mg-headwidget.center .heacent {
+    margin-top: 40px;
+    color: #fff;
+}
+.navbar-wp .dropdown-menu.searchinner .btn {
+    border: medium none;
+    border-radius: 0 4px 4px 0;
+    height: 40px;
+    line-height: 25px;
+    padding: 5px 15px;
+}
+.mg-search-box .dropdown-toggle::after {
+	display: none;
+}
+.m-header {
+	display: none;
+}
+.desk-header {
+	display: flex;
+}
+.mobilehomebtn {
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+}
+.logo-auto {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.mg-blog-post.md{
+	width: 49.8%;
+	float: left;
+	height: 236px;
+}
+.mg-blog-post.md .bottom h4 {
+    font-size: 26px;
+}
+.mb1px {
+	margin-bottom: 1px;
+}
+.editor-posts .mg-blog-post-box {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+.editor-posts .mg-blog-post-box .mg-post-thumb.sm{
+    height: 155px;
+}
+.editor-posts .mg-blog-post-box .post-edit-link {
+    display: none;
+}
+.mg-blog-post-box h4.title {
+    letter-spacing: 0.3px;
+}
+.editor-posts .mg-blog-post-box h4.title {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.editor-posts .mg-blog-post-box .small{
+    padding: 15px 5px 0;
+}
+.mg-blog-post-box .mg-header {
+    padding: 20px 20px;
+}
+footer .site-description {
+    letter-spacing: 1.2px; 
+}
+.mg-headwidget .site-branding-text .text-center {
+    color: #fff;
+    text-align: center;
+}
+.woocommerce div.product div.images .woocommerce-product-gallery__wrapper { 
+    box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+}
+.mg-social.info-right a:focus{
+    outline: none;
+}
+.mg-nav-widget-area .navbar-brand{
+    margin-right: 0;
+}
+.comment-detail .edit-link a, 
+.comment-detail .reply a, 
+pre.wp-block-code a {
+    text-decoration: underline;
+}
+.mg-latest-news .mg-latest-news-slider{
+    left: 185px;
+}
+div.mg-latest-news .bn_title span {
+    border: none;
+    top: unset;
+    right: unset;
+}
+.mg-nav-widget-area-back{
+    /* background-position: top; */
+}
+.wp-block-search .wp-block-search__label, .mg-widget .wp-block-group h2, .mg-sidebar .mg-widget .wtitle, .mg-sec-title h4, footer .mg-widget h6{
+    padding-right: 15px;
+}
+:is(.wp-block-search .wp-block-search__label, .mg-widget .wp-block-group h2, .mg-sidebar .mg-widget .wtitle, .mg-sec-title h4, footer .mg-widget h6)::before{
+    display: none;
+}
+.mg-blog-category a{
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border-radius: var(--radius);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+}
+.mg-sidebar .mg-widget .wtitle{
+    font-weight: 700;
+}
+.mg-posts-modul-6 .mg-sec-top-post .title{
+    font-size: 24px;
+    line-height: 1.5;
+}
+.mg-posts-sec-inner .mg-posts-sec-post, .mg-sidebar .mg-widget{
+    box-shadow: 0 0 8px 2px rgba(23, 23, 35, 0.05);
+    border-radius: var(--radius);
+    border: 0;
+}
+.mg-sidebar .mg-widget.widget_search:not(:has(.wp-block-search__button-outside)){
+    padding-top: 0;
+}
+.wp-block-search.wp-block-search__button-only .wp-block-search__button{
+    align-items: center;
+}
+.widget_search:has(.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden){
+    padding-left: 0;
+    padding-right: 0;
+}
+.widget_search:has(.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden) .wp-block-search__label{
+    margin-left: 0;
+}
+.mg-posts-modul-6 .mg-post-thumb{
+    margin-right: -5px;
+}
+.mg-tpt-tag-area, .mg-latest-news-sec{
+    margin-top: 20px;
+    padding: 0;
+    border-bottom: none;
+}
+.mg-tpt-tag-area .mg-tpt-txnlst{
+    padding: 2px 5px;
+    border-radius: var(--radius);
+}
+.mg-latest-news-sec{
+    box-shadow: none;
+}
+.mg-latest-news-sec .mg-latest-news{
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+    border-radius: var(--radius);
+}
+
+/* Animation */
+.mg-latest-news .bn_title .title {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding-right: 8px;
+}
+/* The icon */
+.bn_title .title::before {
+    content: "\e0b7";   /* Font Awesome unicode */
+    font-family: "Font Awesome 6 Free"; /* Or your FA font */
+    font-weight: 900;
+    font-size: 16px;
+    position: relative;
+    z-index: 2;
+}
+/* Ripple animation container (behind icon) */
+.bn_title .title::after {
+    content: "";
+    position: absolute;
+    left: 26px;       /* adjust position relative to icon */
+    top: 50%;
+    transform: translateY(-50%) translateX(0);
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: zoom 2s linear infinite;
+    z-index: 1;
+}
+/* Additional ripples */
+.bn_title .title span::before,
+.bn_title .title span::after {
+    content: "";
+    position: absolute;
+    right: -41px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    clip-path: none;
+    color: #21759b;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}
+
+.bn_title .title span::before {
+    animation: zoom 2s linear 0.5s infinite;
+}
+.missed-inner, .mg-posts-sec-inner .small-list-post .small-post{
+    border-radius: var(--radius);
+}
+.bn_title .title span::after {
+    animation: zoom 2s linear 1s infinite;
+}
+@keyframes zoom {
+    0% {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+/* ============================================= Responsive Part ======================================== */
+
+@media (min-width: 1200px) {
+    .mg-blog-post.md .bottom h4 {
+        max-height: 65px;
+        overflow: hidden;
+    }
+}
+@media (max-width: 991px) {
+	.navbar-wp .navbar-nav > li> a i {
+    	display: none;
+	}	
+    #menu-primary li.active.home {
+        display: none;
+    }
+    .m-header {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .desk-header {
+        display: none;
+    }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+    .mg-fea-area .col-md-3 {
+        display: flex;
+    }
+    .mg-fea-area .col-md-3.top-right-area{
+        display: block;
+    }
+}
+@media screen and (max-width: 767px) and (min-width: 240px) {
+    .mg-headwidget .navbar-wp .navbar-nav > li> a {
+        position: relative;
+        border-bottom: 1px solid rgba(225,225,225,0.4);
+    }
+}
+@media (min-width: 240px) and (max-width: 576px){
+    .mg-fea-area  .mg-posts-sec {
+        margin-bottom:20px;
+    }
+
+    .mg-fea-area .mr-bot60 {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,25 @@
+:root {
+	--grady-color: linear-gradient(300deg, #FF3726 30%, #CC0001 100%);
+	--pri-color: #052d6c;
+	--secondary-color: #161B2A;
+	--box-color: #fff;
+	--bg-color: #c1082f;
+}
+.mg-headwidget .mg-head-detail {
+    background: #111;
+}
+.mg-tpt-tag-area, .mg-latest-news-sec{
+	background: transparent;
+}
+.mg-tpt-tag-area .mg-tpt-txnlst{
+    background: var(--box-color);
+}
+.mg-latest-news .bn_title{
+	background-color: var(--bg-color);
+}
+a.newsup-categories.category-color-1 {
+    background: var(--bg-color);
+}
+a.newsup-categories.category-color-2 {
+    background: var(--pri-color);
+}

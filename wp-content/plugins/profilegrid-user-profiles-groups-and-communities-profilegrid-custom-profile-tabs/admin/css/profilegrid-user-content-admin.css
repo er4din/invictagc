@@ -1,0 +1,22 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 May, 2017, 10:30:46 AM
+    Author     : ProfileGrid
+*/
+
+.uimagic #pg-tab-visibility ul.uimradio li
+{
+    width:100%
+}
+
+.uimagic .childfieldsrow#tabs_privacy_html .uiminput select[multiple] {
+    width: 100%;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #cfcfcf;
+}
+

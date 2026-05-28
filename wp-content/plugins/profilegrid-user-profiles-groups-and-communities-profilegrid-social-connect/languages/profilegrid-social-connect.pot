@@ -1,0 +1,283 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2019-05-22 05:54+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/class-profilegrid-social-connect-admin.php:105
+msgid "Social Connect Settings"
+msgstr ""
+
+#: admin/class-profilegrid-social-connect-admin.php:139
+#, php-format
+msgid ""
+"Profilegrid Social Connect work with ProfileGrid Plugin. You can install it  "
+"from <a href='%s'>Here</a>."
+msgstr ""
+
+#: admin/class-profilegrid-social-connect-admin.php:168
+msgid "Connected via:"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:107
+msgid "Do you really want to Disconnect?"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:119
+msgid "Social Connect"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:151
+#: public/class-profilegrid-social-connect-public.php:574
+msgid "Connect with Facebook"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:173
+#: public/class-profilegrid-social-connect-public.php:210
+#: public/class-profilegrid-social-connect-public.php:257
+#: public/class-profilegrid-social-connect-public.php:295
+#: public/class-profilegrid-social-connect-public.php:333
+msgid "Disconnect"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:188
+msgid "Connect to Google"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:227
+msgid "Connect to Linkedin"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:275
+msgid "Connect to Twitter"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:414
+msgid "Logout"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:496
+msgid "Login with Facebook"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:505
+msgid "Login with Google"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:525
+msgid "Login with Linkedin"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:555
+msgid "Login with Twitter"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:584
+msgid "Connect with Google"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:593
+msgid "Connect with Linkedin"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:611
+msgid "Connect with Twitter"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:634
+msgid "You are now connected"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:757
+msgid "New User Created"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:758
+msgid "New user created"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:814
+msgid "New user awaiting review"
+msgstr ""
+
+#: public/class-profilegrid-social-connect-public.php:815
+msgid ""
+"{{display_name}} has just registered in {{group_name}} group and waiting to "
+"be reviewed. To review this member please click the following link: "
+"{{profile_link}}"
+msgstr ""
+
+#: widgets/profilegrid-social-login.php:17
+msgid ""
+"Renders Social Login buttons allowing users to register or login on site "
+"using their social network accounts."
+msgstr ""
+
+#: widgets/profilegrid-social-login.php:19
+msgid "ProfileGrid Social Login"
+msgstr ""
+
+#: widgets/profilegrid-social-login.php:38
+msgid "New Title"
+msgstr ""
+
+#: widgets/profilegrid-social-login.php:43
+msgid "Title:"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:40
+#: admin/partials/profilegrid-social-connect-setting-option.php:7
+msgid "Social Login"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:50
+msgid "Allow Registering through Social Networks"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:56
+msgid ""
+"Social buttons will appear above registration forms, allowing users to "
+"complete registration by authenticating through their social network "
+"accounts."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:61
+msgid "Allow Login through Social Networks"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:67
+msgid ""
+"Social Login buttons will appear above login box, allowing users to login to "
+"their ProfileGrid profiles using their connected social network accounts."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:72
+msgid "Display Social Tab"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:78
+msgid ""
+"A new settings tab will appear in Settings section of user profiles, "
+"allowing users to manage social accounts connected to their user profile."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:83
+msgid "Default Group"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:95
+msgid ""
+"When a visitor tries to login using a social account, and is not yet "
+"registered on the site, he/ she will be asked first to fill registration "
+"form of this group."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:100
+msgid "Enable Autofilling"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:106
+msgid ""
+"Automatically fill values from social account to corresponding fields in "
+"registration form after successful authentication."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:111
+msgid "Enable Facebook"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:117
+msgid "Enable Facebook integration with ProfileGrid user profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:123
+msgid "App ID"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:134
+msgid "App Secret"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:147
+msgid "Enable Twitter"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:153
+msgid "Enable Twitter integration with ProfileGrid user profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:159
+msgid "Consumer Key"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:170
+msgid "Consumer Secret"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:183
+msgid "Enable Google"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:189
+msgid "Enable Google integration with ProfileGrid user profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:195
+#: admin/partials/profilegrid-social-connect-admin-display.php:266
+msgid "Client ID"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:206
+#: admin/partials/profilegrid-social-connect-admin-display.php:277
+msgid "Client Secret"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:219
+msgid "Enable LinkedIn"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:225
+msgid "Enable LinkedIn integration with ProfileGrid user profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:231
+msgid "API Key"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:242
+msgid "API Secret"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:290
+msgid "Cancel"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-admin-display.php:294
+msgid "Save"
+msgstr ""
+
+#: admin/partials/profilegrid-social-connect-setting-option.php:9
+msgid "Configure social networks."
+msgstr ""
+
+#. Name of the plugin
+msgid "Profilegrid Social Connect"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Register and Login users using their social accounts. Allows them to connect "
+"or disconnect their social accounts with ProfileGrid."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profilegrid.co"
+msgstr ""
+
+#. Author of the plugin
+msgid "profilegrid"
+msgstr ""

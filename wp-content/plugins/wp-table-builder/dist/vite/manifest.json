@@ -1,0 +1,99 @@
+{
+  "_common-c0qLbiWL.js": {
+    "file": "assets/common-c0qLbiWL.js",
+    "name": "common",
+    "imports": [
+      "_parser-B_2Tw2G1.js"
+    ]
+  },
+  "_corruption-CDnCbT17.js": {
+    "file": "assets/corruption-CDnCbT17.js",
+    "name": "corruption",
+    "imports": [
+      "_parser-B_2Tw2G1.js"
+    ]
+  },
+  "_index-CYYvp0Al.js": {
+    "file": "assets/index-CYYvp0Al.js",
+    "name": "index",
+    "imports": [
+      "_parser-B_2Tw2G1.js",
+      "_corruption-CDnCbT17.js"
+    ]
+  },
+  "_parser-B_2Tw2G1.js": {
+    "file": "assets/parser-B_2Tw2G1.js",
+    "name": "parser"
+  },
+  "_renderer-Fs_vOr7J.js": {
+    "file": "assets/renderer-Fs_vOr7J.js",
+    "name": "renderer",
+    "imports": [
+      "_parser-B_2Tw2G1.js"
+    ]
+  },
+  "src/editor-common.ts": {
+    "file": "assets/editor-common-D7zcTGE2.js",
+    "name": "editor-common",
+    "src": "src/editor-common.ts",
+    "isEntry": true,
+    "imports": [
+      "_index-CYYvp0Al.js",
+      "_corruption-CDnCbT17.js",
+      "_renderer-Fs_vOr7J.js",
+      "_common-c0qLbiWL.js",
+      "_parser-B_2Tw2G1.js"
+    ]
+  },
+  "src/editor.scss": {
+    "file": "editor-style.css",
+    "src": "src/editor.scss",
+    "isEntry": true
+  },
+  "src/frontend/common.ts": {
+    "file": "assets/frontend-common-DWWqrIE2.js",
+    "name": "frontend-common",
+    "src": "src/frontend/common.ts",
+    "isEntry": true,
+    "imports": [
+      "_parser-B_2Tw2G1.js",
+      "_common-c0qLbiWL.js"
+    ]
+  },
+  "src/frontend/index.ts": {
+    "file": "assets/frontend-script-kC_SBliw.js",
+    "name": "frontend-script",
+    "src": "src/frontend/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_parser-B_2Tw2G1.js",
+      "_corruption-CDnCbT17.js",
+      "_renderer-Fs_vOr7J.js"
+    ]
+  },
+  "src/index.tsx": {
+    "file": "assets/editor-main-DSHeDrkz.js",
+    "name": "editor-main",
+    "src": "src/index.tsx",
+    "isEntry": true,
+    "imports": [
+      "_index-CYYvp0Al.js",
+      "_parser-B_2Tw2G1.js",
+      "_corruption-CDnCbT17.js"
+    ],
+    "css": [
+      "editor-main.css"
+    ]
+  },
+  "src/public/i18n.ts": {
+    "file": "assets/editor-i18n-l0sNRNKZ.js",
+    "name": "editor-i18n",
+    "src": "src/public/i18n.ts",
+    "isEntry": true
+  },
+  "src/styles.scss": {
+    "file": "frontend-style.css",
+    "src": "src/styles.scss",
+    "isEntry": true
+  }
+}

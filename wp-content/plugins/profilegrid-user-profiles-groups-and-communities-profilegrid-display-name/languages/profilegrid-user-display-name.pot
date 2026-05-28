@@ -1,0 +1,227 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Language: \n"
+"POT-Creation-Date: 2019-04-11 06:09+0000\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/class-profilegrid-display-name-admin.php:106
+msgid "Display Name Settings"
+msgstr ""
+
+#: admin/class-profilegrid-display-name-admin.php:135
+#, php-format
+msgid ""
+"ProfileGrid Display Name work with ProfileGrid Plugin. You can install it  "
+"from <a href='%s'>Here</a>."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:33
+msgid "User Display Name Settings"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:44
+msgid "Enable Display Name"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:50
+msgid "Turn on customized display names for user profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:58
+#: admin/partials/profilegrid-display-name-group-option.php:17
+msgid "Name Pattern"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:62
+#: admin/partials/profilegrid-display-name-group-option.php:21
+msgid "FirstName LastName"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:63
+#: admin/partials/profilegrid-display-name-group-option.php:22
+msgid "LastName, FirstName"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:64
+#: admin/partials/profilegrid-display-name-group-option.php:23
+msgid "F. LastName"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:65
+#: admin/partials/profilegrid-display-name-group-option.php:24
+msgid "FirstName L."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:66
+#: admin/partials/profilegrid-display-name-group-option.php:25
+msgid "F.L."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:67
+#: admin/partials/profilegrid-display-name-group-option.php:26
+msgid "NickName"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:69
+#: admin/partials/profilegrid-display-name-group-option.php:27
+msgid "UserName"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:70
+#: admin/partials/profilegrid-display-name-group-option.php:28
+msgid "Email"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:74
+msgid "Select a pattern for displaying names."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:79
+#: admin/partials/profilegrid-display-name-group-option.php:40
+msgid "Display Name Style"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:83
+#: admin/partials/profilegrid-display-name-group-option.php:45
+msgid "Default"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:84
+#: admin/partials/profilegrid-display-name-group-option.php:46
+msgid "Capitalized"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:85
+#: admin/partials/profilegrid-display-name-group-option.php:47
+msgid "Uppercase"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:86
+#: admin/partials/profilegrid-display-name-group-option.php:48
+msgid "lowercase"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:87
+#: admin/partials/profilegrid-display-name-group-option.php:49
+msgid "Underlined"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:88
+#: admin/partials/profilegrid-display-name-group-option.php:50
+msgid "Bold"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:92
+#: admin/partials/profilegrid-display-name-group-option.php:54
+msgid "Select a text style for the user display name on their profiles."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:97
+msgid "Enable Display Style for Prefix and Suffix"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:103
+msgid ""
+"Apply a seperate style to the Prefix and Suffix you are using with display "
+"names."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:108
+#: admin/partials/profilegrid-display-name-group-option.php:58
+msgid "Add Prefix"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:115
+msgid "Define a common prefix for all display names."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:120
+#: admin/partials/profilegrid-display-name-group-option.php:69
+msgid "Prefix"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:127
+#: admin/partials/profilegrid-display-name-group-option.php:76
+msgid "Define prefix text."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:134
+#: admin/partials/profilegrid-display-name-group-option.php:83
+msgid "Add Suffix"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:141
+msgid "Define a common suffix for all display names."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:146
+msgid "Suffix "
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:153
+#: admin/partials/profilegrid-display-name-group-option.php:101
+msgid "Define suffix text."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:164
+msgid "Cancel"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-admin-display.php:168
+msgid "Save"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:3
+msgid "Display Name Pattern"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:9
+msgid "Turn on customized display names for user profiles for this group."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:33
+msgid "Select a pattern for displaying names for this group."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:64
+msgid "Define a common prefix for all display names for this group."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:89
+msgid "Define a common suffix for all display names for this group."
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-group-option.php:94
+msgid "Suffix"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-setting-option.php:7
+msgid "User Display Name"
+msgstr ""
+
+#: admin/partials/profilegrid-display-name-setting-option.php:9
+msgid "Customize display names, define patterns"
+msgstr ""
+
+#. Name of the plugin
+msgid "ProfileGrid User Display Name"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Now take complete control of your users' display names. Mix and match "
+"patterns and add predefined suffixes and prefixes. There's a both global and "
+"per group option allowing display names in different groups stand out!."
+msgstr ""
+
+#. URI of the plugin
+#. Author URI of the plugin
+msgid "http://profilegrid.co"
+msgstr ""
+
+#. Author of the plugin
+msgid "profilegrid"
+msgstr ""
