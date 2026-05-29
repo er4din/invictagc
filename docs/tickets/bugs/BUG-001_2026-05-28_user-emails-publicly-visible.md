@@ -10,16 +10,6 @@
 
 ---
 
-## Severity Reference
-| Level | Criteria |
-|---|---|
-| MILD | Minor visual inconsistencies; minor performance issues with no functional impact |
-| MODERATE | Functional degradation affecting user experience but not blocking core use |
-| MAJOR | Core feature broken for a subset of users or under specific conditions |
-| CRITICAL | Site inaccessible, core functions broken for all users, or admin security compromised |
-
----
-
 ## Bug Description
 Registered user email addresses are publicly visible on user profile pages. Any site visitor — including unauthenticated users — can view the email address of any member by navigating to their profile via the Users tab. This is a privacy violation and exposes personal user data to the public.
 
