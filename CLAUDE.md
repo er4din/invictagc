@@ -70,6 +70,36 @@ After the developer approves merging but before the merge is executed, create lo
 
 ---
 
+## Ticketing System
+
+### Folder structure
+```
+docs/tickets/
+  bugs/       → BUG-XXX_YYYY-MM-DD_ticket-name.md
+  tweaks/     → TWK-XXX_YYYY-MM-DD_ticket-name.md
+  templates/  → source templates (do not edit directly)
+```
+
+### ID format
+- Bugs: `BUG-001`, `BUG-002` ... (increment from highest existing ID)
+- Tweaks: `TWK-001`, `TWK-002` ... (increment from highest existing ID)
+
+### Filename format
+`BUG-003_2026-05-28_login-button-missing.md`  
+`TWK-002_2026-05-28_update-leaderboard-styling.md`
+
+### Workflow
+- When a bug or tweak is identified, create a ticket using the appropriate template before beginning work
+- The ticket's branch name must match the `Branch` field in the ticket header
+- Update ticket `Status` field as work progresses: `OPEN → IN PROGRESS → RESOLVED`
+- Resolved tickets remain in their folder — do not delete them
+
+### Loading tickets
+- Only load the specific ticket being worked on — never load the full tickets directory
+- Reference related tickets by ID in the Notes field rather than loading them
+
+---
+
 ## Deployment
 - Pushing to `main` automatically deploys to GreenGeeks via FTP (GitHub Actions workflow at `.github/workflows/deploy.yml`)
 - FTP credentials are stored as GitHub repository secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`
