@@ -28,3 +28,5 @@ jobs:
             **/.git*/**
             **/node_modules/**
             .github/**
+            CLAUDE.md
+            docs/**
