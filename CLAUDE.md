@@ -94,17 +94,19 @@ docs/tickets/
 1. Switch to the developer's ticketing branch (`tickets/er4din` or `tickets/paul`) — create it from `development` if it doesn't exist yet
 2. Create the ticket file using the appropriate template
 3. Commit and push to the ticketing branch
-4. Merge the ticketing branch into `development` — skip artifact review, documentation update, and backup (no code changes on ticketing branches)
-5. Delete the ticketing branch after merging, then recreate it from the updated `development` for next use
+4. Sync the ticketing branch with `development` (merge `development` into the ticketing branch) and resolve any conflicts
+5. Merge the ticketing branch into `development` — skip artifact review, documentation update, and backup (no code changes on ticketing branches)
+6. Delete the ticketing branch after merging, then recreate it from the updated `development` for next use
 
 ### Implementation workflow
 1. Create a fresh feature branch from `development` named after the ticket (e.g. `feature/bug-001-user-emails-publicly-visible`)
 2. Set ticket `Status` to `IN PROGRESS`
 3. Implement and test locally
 4. Follow the full pre-merge checklist (artifact review, docs update, backup)
-5. Delete the ticket file
-6. Merge the feature branch into `development`
-7. Delete the feature branch
+5. Sync the feature branch with `development` (merge `development` into the feature branch) and resolve any conflicts
+6. Delete the ticket file
+7. Merge the feature branch into `development`
+8. Delete the feature branch
 
 ### Loading tickets
 - Only load the specific ticket being worked on — never load the full tickets directory
