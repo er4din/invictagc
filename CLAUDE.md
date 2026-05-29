@@ -101,12 +101,14 @@ docs/tickets/
 ### Implementation workflow
 1. Create a fresh feature branch from `development` named after the ticket (e.g. `feature/bug-001-user-emails-publicly-visible`)
 2. Set ticket `Status` to `IN PROGRESS`
-3. Implement and test locally
-4. Follow the full pre-merge checklist (artifact review, docs update, backup)
-5. Sync the feature branch with `development` (merge `development` into the feature branch) and resolve any conflicts
-6. Delete the ticket file
-7. Merge the feature branch into `development`
-8. Delete the feature branch
+3. In HeidiSQL → `wp_options` → set `siteurl` and `home` to `http://localhost/invictagc`
+4. Implement and test locally
+5. Follow the full pre-merge checklist (artifact review, docs update, backup)
+6. Sync the feature branch with `development` (merge `development` into the feature branch) and resolve any conflicts
+7. In HeidiSQL → `wp_options` → revert `siteurl` and `home` back to `https://invictagc.com`
+8. Delete the ticket file
+9. Merge the feature branch into `development`
+10. Delete the feature branch
 
 ### Loading tickets
 - Only load the specific ticket being worked on — never load the full tickets directory
