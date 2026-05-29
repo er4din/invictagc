@@ -11,6 +11,8 @@
 - `main` — production-ready code, deployed to live site via GitHub Actions on push
 - `development` — integration branch, stable enough for internal use
 - `feature/*` — individual feature or task branches, branched from `development`
+- `tickets/er4din` — Er4din's ticketing branch (ticket filing only)
+- `tickets/paul` — Paul's ticketing branch (ticket filing only)
 
 ---
 
@@ -88,11 +90,21 @@ docs/tickets/
 `BUG-003_2026-05-28_login-button-missing.md`  
 `TWK-002_2026-05-28_update-leaderboard-styling.md`
 
-### Workflow
-- When a bug or tweak is identified, create a ticket using the appropriate template before beginning work
-- The ticket's branch name must match the `Branch` field in the ticket header
-- Update ticket `Status` field as work progresses: `OPEN → IN PROGRESS → RESOLVED`
-- Resolved tickets remain in their folder — do not delete them
+### Filing workflow
+1. Switch to the developer's ticketing branch (`tickets/er4din` or `tickets/paul`) — create it from `development` if it doesn't exist yet
+2. Create the ticket file using the appropriate template
+3. Commit and push to the ticketing branch
+4. Merge the ticketing branch into `development` — skip artifact review, documentation update, and backup (no code changes on ticketing branches)
+5. Delete the ticketing branch after merging, then recreate it from the updated `development` for next use
+
+### Implementation workflow
+1. Create a fresh feature branch from `development` named after the ticket (e.g. `feature/bug-001-user-emails-publicly-visible`)
+2. Set ticket `Status` to `IN PROGRESS`
+3. Implement and test locally
+4. Follow the full pre-merge checklist (artifact review, docs update, backup)
+5. Delete the ticket file
+6. Merge the feature branch into `development`
+7. Delete the feature branch
 
 ### Loading tickets
 - Only load the specific ticket being worked on — never load the full tickets directory
