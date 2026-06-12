@@ -93,11 +93,12 @@ Add WP Migrate DB to the plugin inventory in `docs/site-structure.md`.
 ## Phase 5 — Validation
 
 ### Step 9 — End-to-end test
-1. Make a visible configuration change locally (e.g. add a test tab to a profile group)
-2. Export local DB via WP Migrate DB (local→live find/replace)
-3. Import to live site via phpMyAdmin
-4. Confirm the change appears on `invictagc.com`
-5. Reverse the test change and repeat the export/import cycle to confirm clean rollback
+1. Export live DB via WP Migrate (live→local find/replace) and import locally — ensures test starts from latest live data
+2. Make a visible configuration change locally (e.g. add a test tab to a profile group)
+3. Export local DB via WP Migrate (local→live find/replace)
+4. Import to live site via phpMyAdmin
+5. Confirm the change appears on `invictagc.com`
+6. Reverse the test change locally and repeat the export/import cycle to confirm clean rollback
 
 ### Step 10 — Document results
 Record any issues encountered during the test in a BUG or TWK ticket as appropriate. If the workflow is validated, mark this roadmap as complete.
@@ -105,8 +106,8 @@ Record any issues encountered during the test in a BUG or TWK ticket as appropri
 ---
 
 ## Status
-- [ ] Phase 1 — Installation
-- [ ] Phase 2 — Live → Local workflow validated
-- [ ] Phase 3 — Local → Live workflow validated
-- [ ] Phase 4 — CLAUDE.md and docs updated
+- [x] Phase 1 — Installation
+- [x] Phase 2 — Live → Local workflow validated
+- [x] Phase 3 — Local → Live workflow validated
+- [x] Phase 4 — CLAUDE.md and docs updated
 - [ ] Phase 5 — End-to-end test passed

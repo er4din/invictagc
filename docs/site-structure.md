@@ -149,6 +149,7 @@
 ### Migration / Backup
 | Plugin | Slug | Role |
 |---|---|---|
+| WP Migrate Lite | `wp-migrate-db` | Database export/import with URL find-replace between environments |
 | All-in-One WP Migration | `all-in-one-wp-migration` | Site export/import |
 | Migrate Guru | `migrate-guru` | Large site migration |
 

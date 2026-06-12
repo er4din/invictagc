@@ -1,6 +1,6 @@
 /**
  *  Advanced iframe external workaround file v2025 free
- *  Created: 2026-05-24 21:52:07
+ *  Created: 2026-05-29 19:08:31
  */
 var extendedDebug = false;
 
