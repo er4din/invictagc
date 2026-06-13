@@ -38,6 +38,9 @@ wp-config-sample.php
 *.log
 /wp-content/debug.log
 
+# Maintenance mode trigger — must never be committed (would deploy to live and lock users out)
+.maintenance
+
 # OS files
 .DS_Store
 Thumbs.db

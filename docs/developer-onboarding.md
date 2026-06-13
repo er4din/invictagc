@@ -61,7 +61,7 @@ define( 'DB_NAME', 'invictagc' );
 define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 define( 'DB_HOST', 'localhost' );
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 define( 'DB_COLLATE', '' );
 
 // Generate fresh values at https://api.wordpress.org/secret-key/1.1/salt/
@@ -77,7 +77,7 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 $table_prefix = 'wp_';
 
 define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_DISPLAY', true );
+define( 'WP_DEBUG_DISPLAY', false );
 
 // Prevents plugins from making external HTTP requests — dramatically reduces local load time
 define('WP_HTTP_BLOCK_EXTERNAL', true);
@@ -119,7 +119,7 @@ An existing developer must export the current live database via WP Migrate and s
 
 **You:** once you have the file:
 1. In HeidiSQL, select the empty `invictagc` database
-2. **File** → **Run SQL file** → select the `.sql.gz` file
+2. **File** → **Run SQL file** → select the `.sql` file
 3. Confirm auto-detect encoding if prompted
 
 ---

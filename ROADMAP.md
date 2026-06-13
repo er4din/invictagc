@@ -48,12 +48,12 @@ Use this when starting a new feature branch and you need the latest live configu
 2. Under **Find**, enter: `https://invictagc.com`
 3. Under **Replace**, enter: `http://localhost/invictagc`
 4. Add a second find/replace if needed for any hardcoded media paths
-5. Click **Export** — downloads a `.sql.gz` file
+5. Click **Export** — downloads a `.sql` file
 
 ### Step 4 — Import to local
 1. Open HeidiSQL → right-click `invictagc` → **Drop** → confirm
 2. Right-click connection → **Create new** → **Database** → name `invictagc`
-3. Select the empty `invictagc` database → **File** → **Run SQL file** → select the exported `.sql.gz` file
+3. Select the empty `invictagc` database → **File** → **Run SQL file** → select the exported `.sql` file
 4. Verify the site loads correctly at `http://localhost/invictagc`
 
 ---
@@ -66,12 +66,12 @@ Use this after a feature branch has been tested locally and is ready to deploy.
 1. On local site: WP-Admin → Migrate DB → Export
 2. Under **Find**, enter: `http://localhost/invictagc`
 3. Under **Replace**, enter: `https://invictagc.com`
-4. Click **Export** — downloads a `.sql.gz` file
+4. Click **Export** — downloads a `.sql` file
 
 ### Step 6 — Import to live site
 1. Log into GreenGeeks cPanel → phpMyAdmin
 2. Select the live database → **Import** tab
-3. Choose the exported `.sql.gz` file → click **Go**
+3. Choose the exported `.sql` file → click **Go**
 4. Verify the live site at `https://invictagc.com` looks correct
 
 ---

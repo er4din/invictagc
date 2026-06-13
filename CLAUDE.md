@@ -104,14 +104,14 @@ docs/tickets/
 3. Export the live database via WP Migrate (live → local):
    - On the live site: WP-Admin → Tools → Migrate DB → Export
    - Find: `https://invictagc.com` / Replace: `http://localhost/invictagc`
-   - In HeidiSQL: drop `invictagc` DB → recreate empty → import the downloaded `.sql.gz`
+   - In HeidiSQL: drop `invictagc` DB → recreate empty → import the downloaded `.sql`
 4. Implement and test locally
 5. Follow the full pre-merge checklist (artifact review, docs update, backup)
 6. Sync the feature branch with `development` (merge `development` into the feature branch) and resolve any conflicts
 7. Export the local database via WP Migrate (local → live):
    - On the local site: WP-Admin → Tools → Migrate DB → Export
    - Find: `http://localhost/invictagc` / Replace: `https://invictagc.com`
-   - In GreenGeeks cPanel → phpMyAdmin: import the downloaded `.sql.gz` to the live database
+   - In GreenGeeks cPanel → phpMyAdmin: import the downloaded `.sql` to the live database
 8. Delete the ticket file
 9. Merge the feature branch into `development`
 10. Delete the feature branch
