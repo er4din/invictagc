@@ -8,7 +8,7 @@
 - Backups saved to `C:\Users\danil\Downloads\`
 
 ## Branch Structure
-- `main` — production-ready code, deployed to live site via GitHub Actions on push
+- `main` — stable snapshot of the codebase; merged into periodically as a record of production state
 - `development` — integration branch, stable enough for internal use
 - `feature/*` — individual feature or task branches, branched from `development`
 - `tickets/er4din` — Er4din's ticketing branch (ticket filing only)
@@ -68,7 +68,6 @@ After the developer approves merging but before the merge is executed, create lo
 - `main` lags behind `development` intentionally
 - Only promote `development` to `main` when it is deemed sufficiently stable (no known breaking bugs, features tested end-to-end)
 - Before merging `development` into `main`, warn the developer of any known instabilities or unresolved issues on the `development` branch and require explicit approval before proceeding
-- Merging `development` into `main` triggers automatic deployment to the live site via GitHub Actions — treat it as a production release
 
 ---
 
@@ -123,7 +122,7 @@ docs/tickets/
 ---
 
 ## Deployment
-- Pushing to `main` automatically deploys to GreenGeeks via FTP (GitHub Actions workflow at `.github/workflows/deploy.yml`)
-- FTP credentials are stored as GitHub repository secrets: `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`
+- Code is deployed to the live site manually via FTP — GitHub is not used for automated deployment
+- GitHub serves as the repository for bug tickets, workflow documentation, and site structure records
 - Never commit credentials or environment-specific config to the repository
 - `wp-config.php` is excluded from version control
