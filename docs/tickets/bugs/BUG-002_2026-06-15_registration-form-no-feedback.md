@@ -47,13 +47,46 @@ Note: two accounts (NoFearOfFire, Evilbrennan) appear in `wp_signups` with `acti
 
 ---
 
+## Investigation Findings — BuddyPress Pipeline Abandoned
+
+Further testing on 2026-06-15 confirmed that registration also fails silently when submitted from `/register/` (the BuddyPress-designated page). Additional checks ruled out:
+
+- **"Anyone can register" disabled** — confirmed ON in WP-Admin → Settings → General
+- **BuddyPress Register component inactive** — no such component exists separately in this version; all 10 components are active
+
+The Youzify/BuddyPress registration pipeline has never successfully created an account on this site through any front-end path. The root cause of the AJAX-level failure was not fully identified. Given the number of layers involved (Youzify Membership System → Youzify AJAX handler → BuddyPress `bp_core_register_account()` → `wp_signups`), the decision was made to replace the entire pipeline rather than continue diagnosing it.
+
+**Decision:** Replace the Youzify/BuddyPress registration and login pipeline with WordPress native authentication, surfaced on the front end via the **Theme My Login** plugin. WordPress native registration is confirmed working (both existing accounts were created via this path). BuddyPress automatically picks up any WordPress-registered user as a community member via the `user_register` hook — profiles, activity streams, and friend connections are unaffected.
+
+---
+
 ## Implementation Plan
 
-1. Test registration from `invictagc.com/register/` (the BuddyPress-designated registration page) with fresh credentials — confirm whether a record appears in `wp_signups` and an activation email is sent
-2. If `/register/` works: update the site's navigation menu to point the **Register** link to `/register/` instead of `/register-2/`. Delete or redirect `/register-2/` to avoid confusion
-3. If `/register/` also fails: investigate BuddyPress's registration form processing hook (`bp_screens_register`) and whether it is firing on that page
-4. Once registration is confirmed working end-to-end, investigate whether a success message is displayed after submission — if not, check Youzify's Membership System Settings for a post-registration redirect or confirmation message option
-5. Test full flow: register → activation email received → link clicked → user active in WP-Admin → Users → user can log in
+### Phase 1 — Install Theme My Login
+1. WP-Admin → Plugins → Add New → search **Theme My Login** → Install → Activate
+2. Note the URLs of the login and register pages it creates automatically (typically `/login/` and `/register/`)
+
+### Phase 2 — Replace shortcodes on existing pages
+3. Edit the existing Login page: remove `[youzify_login]`, replace with Theme My Login's login shortcode (`[theme-my-login]` or as documented by the plugin)
+4. Edit or delete `/register-2/`: replace content with Theme My Login's register shortcode, or delete the page entirely and use the page Theme My Login created
+5. Update BuddyPress page assignment: WP-Admin → Settings → BuddyPress → Pages → set **Register** to the Theme My Login register page
+
+### Phase 3 — Update navigation
+6. WP-Admin → Appearance → Menus → update the **Login** and **Register** nav links to point to the new Theme My Login page URLs
+
+### Phase 4 — Disable Youzify Membership System
+7. WP-Admin → Youzify → Membership System Settings → toggle **Activate Membership System** OFF → Save Changes
+8. Update Step 8 in `docs/development-workflow-memo.md` — this step is no longer required after database imports; remove or revise it to reflect that Youzify Membership System should remain OFF
+
+### Phase 5 — Test
+9. Register a new account via the front-end register page — confirm the account appears immediately in WP-Admin → Users (WordPress native registration does not require email activation; the user receives a generated password by email)
+10. Log in via the front-end login page — confirm successful authentication
+11. Confirm a BuddyPress member profile was created for the new account
+12. Test as a logged-out visitor: confirm login and register pages are accessible and functional
+
+### Phase 6 — Cleanup
+13. Delete the `/register-2/` page if it still exists
+14. Close this ticket and update Status to RESOLVED
 
 ---
 
