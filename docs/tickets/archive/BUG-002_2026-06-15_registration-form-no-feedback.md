@@ -4,7 +4,8 @@
 |---|---|
 | **ID** | BUG-002 |
 | **Filed** | 2026-06-15 |
-| **Status** | OPEN |
+| **Status** | RESOLVED |
+| **Resolved** | 2026-06-15 |
 | **Severity** | MAJOR |
 | **Branch** | feature/bug-002-registration-form-no-feedback |
 
