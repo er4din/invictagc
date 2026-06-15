@@ -12,9 +12,11 @@
 
 ## Bug Description
 
-After a user submits the front-end registration form (`[youzify_register]` shortcode, page `/register-2/`), the form silently resets to empty with no confirmation message, no error message, and no redirect. Users have no indication that their registration was received or that they should check their email for an activation link. This affects all visitors attempting to register via the site's registration page.
+The front-end registration form at `/register-2/` has never successfully registered a user through the BuddyPress pipeline. Every attempt results in the form silently resetting with no confirmation message, no error, and no record written to `wp_signups` or `wp_users`. All confirmed successful registrations during investigation were made via a workaround (navigating to `invictagc.com/wp-admin`, which surfaces the WordPress native login page with a Register link that bypasses the Youzify/BuddyPress pipeline).
 
-A secondary failure was also observed: if a user account is deleted via WP-Admin → Users and the same username/email is immediately re-used for registration, the form silently fails and no record is written to `wp_signups`. The cause is unconfirmed but may involve orphaned records in BuddyPress extended profile tables or a plugin-level block.
+**Root cause identified:** BuddyPress is configured to process registrations at `/register/`. The Youzify `[youzify_register]` shortcode was placed on a separate page at `/register-2/`. When the form on `/register-2/` submits, BuddyPress does not recognise the request as a registration and silently ignores it — nothing is written to the database.
+
+Navigating directly to `/register/` renders the identical Youzify registration form (Youzify's Membership System overrides BuddyPress's template on the designated registration page). Registration submitted from `/register/` is expected to be processed correctly by BuddyPress. This has not yet been confirmed by a successful test at the time of filing.
 
 ---
 
@@ -22,11 +24,12 @@ A secondary failure was also observed: if a user account is deleted via WP-Admin
 
 The following were identified and fixed during diagnosis on 2026-06-15. They are documented here as context:
 
-- **Youzify Membership System was disabled** (caused by a local→live database import overwriting the setting). Fixed by re-enabling via WP-Admin → Youzify → Membership System Settings. This is now documented as Step 8 of the development workflow memo.
-- **`wp_signups` table was missing from the live database** (pre-existing gap — the table was never created as BuddyPress registration had not been previously exercised). Fixed by manually creating the table via phpMyAdmin. See Notes for SQL.
-- **Birthday field blocked HTML5 form validation** (Youzify hides native `<select>` elements but leaves `required` attribute on them). Fixed by adding a JavaScript snippet via WPCode that removes `required` from hidden selects on submit.
+- **Youzify Membership System was disabled** — caused by a local→live database import overwriting the setting. Fixed by re-enabling via WP-Admin → Youzify → Membership System Settings. Now documented as Step 8 of the development workflow memo.
+- **`wp_signups` table was missing from the live database** — pre-existing gap; the table was never created as BuddyPress registration had never been exercised on this site. Fixed by manually creating the table via phpMyAdmin. See Notes for SQL.
+- **Birthday field blocked HTML5 form validation** — Youzify hides native `<select>` elements but leaves the `required` attribute on them. When the form submitted, the browser found hidden required fields it could not focus, and blocked submission. Fixed by adding a JavaScript snippet via WPCode that removes `required` from hidden selects on submit.
+- **BuddyPress slug conflict** — Attempting to change the BuddyPress registration slug to `register-2` resulted in `register-2-2` (BuddyPress auto-increments to avoid conflict with the existing WordPress page at that slug). This approach was abandoned.
 
-These fixes enabled registration to function end-to-end — confirmed by a successful test registration (user created in `wp_signups`, activation email received and clicked, user active in `wp_users`). The missing feedback message remains the outstanding issue.
+Note: two accounts (NoFearOfFire, Evilbrennan) appear in `wp_signups` with `active=1`. Both were registered via the wp-admin workaround, not the Youzify front-end form. These are not evidence that the front-end form worked.
 
 ---
 
@@ -39,19 +42,18 @@ These fixes enabled registration to function end-to-end — confirmed by a succe
 2. Fill in all required fields (username, email, password, name, birthday, hometown)
 3. Click **Sign Up**
 
-**Expected:** A confirmation message is displayed — e.g. "An activation email has been sent to your address. Please click the link to activate your account."  
-**Actual:** The form fields clear and the page returns to the empty registration form. No message of any kind is shown. The registration may or may not have succeeded — the user has no way to tell.
+**Expected:** Registration is processed, a record is written to `wp_signups`, and a confirmation message or activation email is sent.
+**Actual:** The form fields clear, no record is created anywhere in the database, and no message is shown. The failure is silent and universal — affects all users, all credentials.
 
 ---
 
 ## Implementation Plan
 
-1. Attempt registration with completely fresh credentials (not previously used on the site) and observe whether a success message appears — this will confirm whether the issue is universal or conditional
-2. Check Youzify settings for a registration success redirect page or confirmation message configuration (Youzify → General Settings / Membership System Settings)
-3. If no Youzify setting is available, investigate whether the success state handler in Youzify's registration JavaScript is firing correctly — check browser console after a successful submission
-4. As a fallback: configure a registration redirect via Youzify settings or add a WPCode snippet to redirect to a custom "check your email" page after form submission
-5. Investigate the re-registration failure after account deletion — check BuddyPress extended profile tables (`bp_xprofile_data`) for orphaned records tied to the deleted user's ID, and check whether Loginizer or Login Security Recaptcha is throttling repeated attempts from the same IP
-6. Test end-to-end: register → receive activation email → click link → confirm user appears in WP-Admin → Users → confirm user can log in
+1. Test registration from `invictagc.com/register/` (the BuddyPress-designated registration page) with fresh credentials — confirm whether a record appears in `wp_signups` and an activation email is sent
+2. If `/register/` works: update the site's navigation menu to point the **Register** link to `/register/` instead of `/register-2/`. Delete or redirect `/register-2/` to avoid confusion
+3. If `/register/` also fails: investigate BuddyPress's registration form processing hook (`bp_screens_register`) and whether it is firing on that page
+4. Once registration is confirmed working end-to-end, investigate whether a success message is displayed after submission — if not, check Youzify's Membership System Settings for a post-registration redirect or confirmation message option
+5. Test full flow: register → activation email received → link clicked → user active in WP-Admin → Users → user can log in
 
 ---
 
@@ -80,4 +82,4 @@ CREATE TABLE `wp_signups` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-This table must not be overwritten by future local→live database imports. Add to the post-import checklist in the development workflow memo if wp_signups is absent after any future import.
+This table must not be overwritten by future local→live database imports. If `wp_signups` is absent after any future import, recreate it using the above SQL before testing registration.
