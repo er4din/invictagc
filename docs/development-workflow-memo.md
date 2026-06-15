@@ -39,6 +39,7 @@ Once you have decided on and tested your changes locally, follow this sequence:
 5. Quickly recreate your noted changes on this fresh local copy.
 6. Export the updated local database via WP Migrate (local → live) and import it via phpMyAdmin in GreenGeeks cPanel.
 7. Remove the `.maintenance` file from `public_html/` via GreenGeeks cPanel File Manager — the site is back online.
+8. **Re-enable the Youzify Membership System** — every database import from local overwrites this setting because Youzify is not installed locally. Go to WP-Admin → Youzify → scroll down to **Membership System Settings** → toggle **Activate Membership System** ON → **Save Changes**. If this step is skipped, the login and registration forms on the site will display as broken shortcode text (`[youzify_login]`, `[youzify_register]`) for all visitors.
 
 The maintenance window should be as short as possible. Having your changes written down in advance (step 1) is what makes steps 5 and 6 fast.
 
